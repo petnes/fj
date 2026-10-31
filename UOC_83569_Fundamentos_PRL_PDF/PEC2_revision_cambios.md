@@ -73,7 +73,9 @@ Sentencias. Abre en CENDOJ los tres ECLI (ES:TSJCL:2025:2645, ES:TS:2018:3454 y 
 
 Tres referencias que conviene mirar en el consolidado: DA 2.ª apartado 3 de la Ley 14/1994 (requisitos de la ETT para ceder en construcción), art. 7 RD 216/1999 (comunicación por escrito de los daños a la ETT) y art. 12.3 Ley 14/1994 (formación preventiva a cargo de la ETT).
 
-La fotografía. El PDF de tu borrador solo lleva el logo de la UOC, no la foto, así que he trabajado con tu descripción (operarios sobre vigas sin arnés ni barandillas y un soldador con una caja de cartón). Si en la foto se ven cascos, chalecos o calzado de seguridad, añádelo en 1.1 como obligaciones que sí cumplen (art. 29.2.2.º LPRL).
+La fotografía. Ya la he visto en tu captura del enunciado y confirma el análisis: operarios sobre la estructura de vigas sin arnés, sin barandillas y sin casco, dos de ellos soldando con cajas de cartón por pantalla, y guantes y manga larga en el soldador del primer plano. El texto de 1.1 y de 2.3 habla ahora de dos soldadores, que es lo que se ve.
+
+Dos versiones del enunciado. La página 4 del PDF que tienes en el escritorio (PEC2_Enunciado_Fundamentos_PRL.pdf) plantea unas preguntas 2, 3 y 4 distintas de las del archivo "pec 2.txt" del repositorio, que es el que responde tu borrador. En el PDF, la 2 trata de una actividad formativa para ese puesto (2.1 y 2.2), la 3 del ámbito de aplicación de la LPRL (3.1 y 3.2) y la 4 del marco normativo posterior a la LPRL (4.1, 4.2 y 4.3), estas dos últimas iguales a las de la PEC 1. En el txt, la 2 son los principios de la acción preventiva (2.1 a 2.3) y la 3 la LISOS (3.1 y 3.2). Antes de entregar hay que comprobar en el aula cuál es el enunciado vigente, porque si es el del PDF habría que rehacer la segunda mitad del documento.
 
 Enunciado incompleto. El archivo "pec 2.txt" se corta en la pregunta 3.2 ("relaciona las acciones empresariales que constituyen infracciones preventivas, la oblig..."). La respuesta relaciona acción, obligación incumplida, infracción y sanción, que es la lectura más probable. Comprueba en el enunciado original que no pide nada más y que no existe una 3.3.
 
