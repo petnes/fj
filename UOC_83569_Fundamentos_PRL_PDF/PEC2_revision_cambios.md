@@ -2,103 +2,73 @@
 
 Asignatura: Fundamentos jurídicos de la PRL (UOC, 83569). Entrega: antes de las 24 h del 8 de noviembre de 2026.
 
-Archivos revisados: el comentario de la profesora a la PEC 1 (dos capturas), tu PEC 1 entregada (7 páginas), la solución orientativa oficial de la PEC 1, el enunciado de la PEC 2 (archivo "pec 2.txt", que se corta en la pregunta 3.2), los seis módulos de la asignatura y tu borrador de la PEC 2 (PDF de 6 páginas).
+Enunciado de referencia: el PDF oficial (PEC2_Enunciado_Fundamentos_PRL.pdf), que me confirmaste como vigente. Sus preguntas son la 1 (fotografía: 1.1 a 1.5), la 2 (actividad formativa: 2.1 y 2.2), la 3 (ámbito de aplicación de la LPRL: 3.1 y 3.2) y la 4 (marco normativo posterior a la LPRL: 4.1, 4.2 y 4.3). El archivo "pec 2.txt" del repositorio recogía otra versión con preguntas 2 y 3 distintas (principios de la acción preventiva y LISOS); tu borrador respondía a esa versión, así que la segunda mitad se ha rehecho entera. La versión anterior queda en el historial del repositorio (commit 34c1697) por si en el aula se dijera lo contrario.
 
-Resultado: la versión corregida está en el archivo `TRABALON_ACEDO_VERONICA_PEC2_FUNDAMENTOS_JURIDICOS_PRL_corregida.docx` (y su PDF de comprobación). Mantiene tu estructura, tu voz y casi todo tu contenido; lo que cambia se explica abajo.
+Resultado: `TRABALON_ACEDO_VERONICA_PEC2_FUNDAMENTOS_JURIDICOS_PRL_corregida.docx` (con su PDF de comprobación), 6 páginas, Arial 11, interlineado 1,5 en las respuestas y bibliografía a un espacio para que quepa todo.
 
 ## 1. Qué penaliza la profesora: lectura de la corrección de la PEC 1
 
-El comentario de la profesora, literal, decía: "Revisa y compara con las soluciones orientativas publicadas. Como mejora, respecto al contenido: revisa los conceptos de factor de riesgo y riesgo laboral y recuerda que la normativa debe nombrarse de forma correcta (indicando el nombre oficial de la misma). Asimismo, debes fundamentar la respuesta dada (no consiste únicamente en dar una respuesta, sino en indicar por qué de la misma, con fundamentos jurídicos). Respecto a la parte formal, revisa los criterios de evaluación incluidos en las instrucciones de la actividad: la extensión máxima indicada es de 6 páginas y se debe incluir una síntesis de aprendizaje (con una reflexión respecto lo aprendido, no un resumen de la respuesta dada)."
+Su comentario, literal, decía: "Revisa y compara con las soluciones orientativas publicadas. Como mejora, respecto al contenido: revisa los conceptos de factor de riesgo y riesgo laboral y recuerda que la normativa debe nombrarse de forma correcta (indicando el nombre oficial de la misma). Asimismo, debes fundamentar la respuesta dada (no consiste únicamente en dar una respuesta, sino en indicar por qué de la misma, con fundamentos jurídicos). Respecto a la parte formal, revisa los criterios de evaluación incluidos en las instrucciones de la actividad: la extensión máxima indicada es de 6 páginas y se debe incluir una síntesis de aprendizaje (con una reflexión respecto lo aprendido, no un resumen de la respuesta dada)."
 
 Contrastado con tu PEC 1 y con la solución oficial, cada frase apunta a algo concreto.
 
-Conceptos de factor de riesgo y riesgo laboral. En la tabla de la pregunta 1.2 de la PEC 1 pusiste como "riesgo laboral" cosas como "respirar partículas en suspensión" o "contacto con el disco", que son descripciones de la situación, y como "factor" observaciones de la foto. La solución oficial espera la taxonomía del módulo 1: el factor de riesgo es la condición de trabajo que origina el peligro (condición ambiental por factores químicos, condición de seguridad derivada del uso de equipos, condición de la carga de trabajo), el riesgo laboral es la posibilidad de daño con el nombre que le da el módulo (exposición a sustancias nocivas, golpes y cortes, sobreesfuerzo, caída de altura) y la consecuencia es el daño, accidente de trabajo o enfermedad profesional. La profesora quiere ver que usas los conceptos tal como los define el artículo 4 LPRL y el módulo, no sinónimos.
+Conceptos. En la tabla de la 1.2 de la PEC 1 pusiste como riesgo laboral descripciones de la situación ("respirar partículas en suspensión") y como factor observaciones de la foto. La solución oficial espera la taxonomía del módulo 1: el factor de riesgo es la condición de trabajo que origina el peligro, el riesgo laboral es la posibilidad de daño con el nombre que le da el módulo y la consecuencia es el daño (accidente de trabajo o enfermedad profesional).
 
-Nombre oficial de la normativa. En el cuerpo de la PEC 1 las normas aparecían solo como "LPRL", "RD 2/2006" o "RD 893/2024", sin que en ningún momento del texto se dijera su título oficial. Para la PEC 2 las instrucciones permiten citar abreviado entre paréntesis, pero exigen el título oficial, la fecha de aplicación y la fuente de publicación en la bibliografía, y lo prudente, visto el comentario, es que la primera vez que una ley aparece en prosa se nombre completa.
+Nombre oficial de la normativa. En el cuerpo de la PEC 1 las normas aparecían solo como "LPRL" o "RD 2/2006", sin título oficial en ningún momento. Para la PEC 2 las instrucciones permiten citar abreviado entre paréntesis, pero exigen título oficial, fecha de aplicación y fuente de publicación en la bibliografía, y lo prudente es nombrar completa cada norma la primera vez que aparece en prosa.
 
-Fundamentar la respuesta. En la PEC 1, la tabla de 1.2 no tenía ni una referencia jurídica, 3.1 y 3.2 eran descriptivas y 4.1 era una tabla sin explicar el porqué de cada clasificación. La solución oficial pide, en casi todos los apartados, "fundamentar jurídicamente" e indicar "el motivo". La regla para la PEC 2 es que cada afirmación vaya seguida de la norma concreta y de la razón.
+Fundamentar. La tabla de la 1.2 no tenía referencias jurídicas, las 3.1 y 3.2 eran descriptivas y la 4.1 no explicaba el porqué de cada clasificación. La solución oficial pide en casi todos los apartados "fundamentar jurídicamente" e "indicar el motivo".
 
-Extensión. Entregaste 7 páginas, dos de ellas de bibliografía con más de veinte normas, muchas de ellas no usadas en el texto. La séptima página no se corrige.
+Extensión. Entregaste 7 páginas, dos de bibliografía con más de veinte normas, muchas no usadas. La séptima página no se corrige.
 
-Síntesis de aprendizaje. Tus "Síntesis." de la PEC 1 eran una frase que resumía la respuesta ("Comprobar el ECLI y leer la cabecera evita confundir la sentencia..."). La profesora pide un párrafo reflexivo sobre qué has entendido y qué implicaciones tiene, en primera persona.
+Síntesis de aprendizaje. Tus "Síntesis." eran una frase que resumía la respuesta. La profesora pide reflexión sobre qué has entendido y qué implicaciones tiene, en primera persona.
 
-Otros criterios que se deducen de la solución oficial: los enlaces tienen que abrir el documento; cuando se pide tabla, tabla; las descripciones no pueden ser copia literal del módulo; y se valora la cronología y la precisión en las sentencias.
+Las preguntas 3 y 4 de esta PEC 2 son idénticas a las de la PEC 1, así que la profesora va a comparar directamente lo que pusiste entonces con lo que pones ahora. La solución oficial de la PEC 1 es la referencia para ambas: actividades del art. 3.2 LPRL, motivo de exclusión y norma aplicable a cada una (RD 2/2006, RD 179/2005, RD 67/2010, Ley 17/2015, RD 524/2023, RD 1755/2007); tabla normativa-disciplina; denominación exacta y enlace que abra; análisis centrado en la integración de la prevención.
 
-## 2. Qué se repetía en tu borrador de la PEC 2
+## 2. Qué había en el borrador y qué se ha hecho
 
-El borrador estaba bien planteado: citas tras el punto, síntesis en primera persona, bibliografía con títulos oficiales, jurisprudencia con ECLI y 6 páginas justas. Aun así, arrastraba varios puntos que la profesora ya te había señalado o que entran en los criterios de la PEC 2.
+El borrador estaba bien planteado en la pregunta 1 (citas tras el punto, síntesis en primera persona, jurisprudencia con ECLI, bibliografía con títulos oficiales), pero respondía a unas preguntas 2 y 3 que no están en el enunciado vigente y no respondía a la 2 (formación), la 3 (ámbito) ni la 4 (marco normativo) del PDF. Con doce subpreguntas en seis páginas había que condensar: la pregunta 1 ha pasado de 3,3 páginas a unas 2, sin perder ninguna referencia jurídica relevante.
 
-Nombre oficial. La LISOS, que es el objeto de la pregunta 3, aparecía en 3.1 solo como "Real Decreto Legislativo 5/2000", sin título. La LPRL, la LETA y la Ley 14/1994 se nombraban siempre por acrónimo o número en el texto. Corregido: cada una se nombra completa la primera vez que aparece en prosa.
+Lo que se mantiene de tu borrador: el análisis de la foto (ya la he visto en tu captura: operarios sobre las vigas sin arnés, barandillas ni casco, dos soldadores con cajas de cartón, guantes y manga larga), la estructura de cada respuesta de la 1, la STSJ de Castilla y León 521/2025 y la STS de 4 de mayo de 2015, y la voz.
 
-Citas sin artículo. En 3.2 figuraban "RD 773/1997" y "RD 1627/1997" sin número de artículo, y las instrucciones exigen artículo y acrónimo. Ahora son "art. 3, RD 773/1997" (obligaciones generales del empresario sobre EPI) y "art. 7, RD 1627/1997" (plan de seguridad y salud).
+Lo que se corrige en la pregunta 1 respecto a la PEC 1: nombre oficial de la LPRL, la LETA, la LISOS y la Ley 14/1994 en su primera mención; artículo en todas las citas (art. 3 RD 773/1997 para los EPI, art. 7 RD 1627/1997 para el plan de seguridad y salud); infracciones concretas del autónomo (arts. 2.8, 12.13 y 13.7 LISOS); paralización por el coordinador y libro de incidencias (arts. 13 y 14 RD 1627/1997); infracción de la usuaria que deja empezar sin constancia documental (art. 19.2.b LISOS) y formación a cargo de la ETT (art. 12.3 Ley 14/1994); síntesis reflexivas de una línea. Se ha prescindido de la STS 842/2018 para ganar espacio; si la recuperas, cuesta tres líneas más una en la bibliografía.
 
-Referencia dudosa. En 1.3 citabas "(arts. 4 y 6, RD 486/2010)" para evaluar la radiación del arco y reducirla en origen. En los reales decretos de agentes físicos el artículo de evaluación es el 4 y las medidas de reducción van en el 5; el 6 suele ser información y formación. No he podido abrir el BOE desde este entorno para confirmarlo, así que he dejado el art. 4 (evaluación) y he apoyado la reducción en origen en el art. 15.1.c LPRL, que es seguro.
+Pregunta 2 (nueva). La 2.1 plantea las cuestiones previas: la formación es el último principio de la acción preventiva y no sustituye a la protección colectiva ni a la evaluación, de la que salen los contenidos (arts. 15 y 16 LPRL); es obligatoria, teórica y práctica, suficiente y adecuada y centrada en el puesto (art. 19.1); se adapta a cada trabajador y condiciona el acceso a zonas de riesgo grave (arts. 15.2, 15.3 y 28.2); hay que decidir quién la imparte y consultar a los delegados de prevención (arts. 19.2 y 33.1.e LPRL; arts. 36 y 37 RSP); en construcción se añade la formación por oficio del convenio y la Tarjeta Profesional (art. 10 Ley 32/2006); no formar es infracción grave (art. 12.8 LISOS). La 2.2 desarrolla contenidos (riesgos del puesto, EPI, equipos, emergencias, con los artículos de formación de los reglamentos de equipos, EPI y radiaciones ópticas) y organización (momento, periodicidad, jornada, coste, personal cualificado, registro en la planificación), apoyada en el módulo 2 y en la STSJ de Madrid de 11 de julio de 2005 que cita el módulo 3.
 
-Doctrina mal referenciada. Citabas los módulos como "(s. f.)" cuando la portada de los materiales indica primera edición de febrero de 2017, y en 3.1 citabas a Sabadell i Bosch por una idea del módulo 5 (la responsabilidad administrativa no exige daño) mientras la bibliografía solo recogía el módulo 2. Ahora hay dos entradas, 2017a (módulo 2) y 2017b (módulo 5), y las citas en el texto las distinguen.
+Pregunta 3 (reutiliza y mejora tu PEC 1). La 3.1 delimita primero lo que sí entra (relaciones laborales, administraciones públicas, cooperativas, centros militares y penitenciarios con adaptaciones) y después las tres exclusiones del art. 3.2, con el matiz de que la exclusión solo alcanza a las tareas incompatibles y de que la LPRL inspira la normativa específica. Incorpora la supresión de la exclusión del hogar familiar y el RD 893/2024, que ya habías detectado. La 3.2 da, para cada grupo, el porqué de la exclusión y la norma aplicable, con la lista de la solución oficial y los títulos completos en el texto.
 
-Síntesis. Una de ellas (1.3) era un resumen de la respuesta, justo lo que la profesora dijo que no quería. Todas llevan ahora la etiqueta "Síntesis de aprendizaje" y están redactadas como reflexión sobre lo aprendido. Dos de ellas (2.3 y 3.1) contenían anécdotas personales muy concretas (una gestoría donde trabajarías, los partes de accidente por CoNTA). Las he sustituido por una reflexión equivalente sin datos que la profesora pudiera preguntarte. Si de verdad trabajas en una gestoría y esos datos son ciertos, puedes recuperar el texto original, que copio al final de este documento.
+Pregunta 4 (reutiliza y mejora tu PEC 1). La 4.1 es una tabla de cinco normas con su disciplina, elegidas para que coincidan con las que ya se citan en la pregunta 1 (así la bibliografía no crece) y con las tres disciplinas técnicas. La 4.2 vuelve al RD 1215/1997, que ya elegiste en la PEC 1, con el enlace a la guía técnica del INSST que usaste entonces, ahora escrito completo y como hipervínculo. La 4.3 analiza la norma (arts. 3 a 5, anexos I y II, con el apartado de trabajos temporales en altura, que enlaza con la foto) y explica cómo integrarla en la gestión de una empresa.
 
-Errata. "Prueba de evaluación contínua 2" llevaba tilde de más. Corregido.
-
-Fundamentación reforzada donde la pregunta lo pedía. 1.2 incluye ahora las infracciones concretas del autónomo (arts. 2.8, 12.13 y 13.7 LISOS); 1.4 recoge la facultad del coordinador de paralizar la obra y anotarlo en el libro de incidencias (arts. 13 y 14 RD 1627/1997) y su papel organizador de la coordinación (art. 9 RD 1627/1997); 1.5 añade la infracción de la empresa usuaria que deja empezar al trabajador sin constancia documental (art. 19.2.b LISOS) y la obligación de formación de la ETT (art. 12.3 Ley 14/1994); 2.3 conecta los principios con la idea del módulo de que el deber de protección es un deber de medios y dinámico; 3.1 completa las infracciones de subcontratación en los tres grados y añade los sujetos responsables y la responsabilidad solidaria (arts. 2.8 y 42.3 LISOS).
-
-Extensión. Con esas incorporaciones el documento se iba a 7 páginas, así que he recortado frases de relleno, acortado síntesis y ajustado ligeramente el espaciado entre párrafos (la fuente, el tamaño y el interlineado 1,5 se mantienen). La versión final ocupa 6 páginas con unas cuatro líneas de margen, comprobado con LibreOffice y fuente equivalente a Arial.
+Formato. Portada con tu nombre, numeración 1.1 a 4.3 sin texto del enunciado, cabecera y "Página X de 6", Arial 11, interlineado 1,5 en las respuestas. La bibliografía va a un espacio: con 27 entradas no cabe de otra manera, y la instrucción del interlineado habla de las respuestas. Si prefieres ponerla también a 1,5, hay que quitar unas quince líneas de texto. Las propiedades del Word llevan tu nombre como autora y el idioma español.
 
 ## 3. Cambios por pregunta
 
-| Pregunta | Cambio | Corrección de la PEC 1 a la que responde |
+| Pregunta | Qué hay ahora | Corrección de la PEC 1 a la que responde |
 |---|---|---|
-| Portada | "continua" sin tilde; "1.er semestre" | Presentación |
-| 1.1 | Primera mención de la LPRL con título oficial; la condición previa de los deberes del trabajador se apoya en arts. 17 y 19.1 LPRL (antes en el propio art. 29); síntesis reflexiva | Nombre oficial; fundamentar |
-| 1.2 | LETA y LISOS con nombre completo; infracciones del autónomo (arts. 2.8, 12.13 y 13.7 LISOS); redacción más formal ("procurárselos") | Nombre oficial; fundamentar |
-| 1.3 | Art. 3 RD 773/1997 para los EPI; plan de seguridad y salud (art. 7 RD 1627/1997); radiación del arco con art. 15.1.c LPRL y art. 4 RD 486/2010; síntesis reflexiva en vez de resumen | Fundamentar; síntesis |
-| 1.4 | Paralización por el coordinador y libro de incidencias (arts. 13 y 14 RD 1627/1997); coordinador como organizador (art. 9 RD 1627/1997); revisión de la evaluación con art. 16.2 LPRL | Fundamentar |
-| 1.5 | Ley 14/1994 con título oficial; art. 19.2.b LISOS; art. 12.3 Ley 14/1994; frase final de la síntesis sobre que el reparto no permite escudarse | Nombre oficial; fundamentar |
-| 2.1 | Cita de doctrina como (2017a); separación de la cita normativa y la doctrinal; ligera condensación | Referencias |
-| 2.2 | Sin cambios de fondo | |
-| 2.3 | Idea del deber de medios y dinámico (Sabadell i Bosch, 2017a); art. 12.16 LISOS como consecuencia sancionadora; síntesis sin anécdota personal | Fundamentar; síntesis |
-| 3.1 | Título oficial completo de la LISOS; enlace del BOE como hipervínculo real; infracciones de subcontratación en los tres grados; sujetos responsables y solidaridad (arts. 2.8 y 42.3); síntesis sin anécdota personal | Nombre oficial; fundamentar; síntesis |
-| 3.2 | Artículos concretos de RD 773/1997 y RD 1627/1997; suprimida la frase de apertura para ganar espacio | Fundamentar; extensión |
-| Bibliografía | Año 2017 en los módulos; módulo 5 añadido (2017b); editorial FUOC; "CENDOJ" como fuente de las sentencias | Trazabilidad |
+| 1.1 a 1.5 | Versión condensada del borrador, con nombres oficiales en la primera mención, artículo en cada cita y dos sentencias | Nombre oficial; fundamentar; extensión |
+| 2.1 | Cuestiones previas a la formación con base en arts. 15, 16, 19, 28 y 33 LPRL, RSP, Ley 32/2006 y LISOS | Fundamentar |
+| 2.2 | Contenidos y organización de la sesión según art. 19 LPRL y reglamentos de equipos, EPI y radiaciones ópticas; módulo 2; STSJ de Madrid 2005 | Fundamentar; referencias |
+| 3.1 | Ámbito y tres exclusiones del art. 3.2, con la supresión del apartado del hogar familiar | Nombre oficial; fundamentar |
+| 3.2 | Motivo de cada exclusión y norma aplicable, con títulos completos, siguiendo la solución oficial | Fundamentar; nombre oficial |
+| 4.1 | Tabla de cinco normas por disciplina, no exhaustiva | Conceptos (disciplinas) |
+| 4.2 | RD 1215/1997 con denominación exacta y enlace completo a la guía del INSST | Enlace que abra |
+| 4.3 | Análisis de la norma y propuesta de integración vinculada a la foto | Fundamentar; aplicación práctica |
+| Síntesis | Una por subpregunta, reflexiva, de una línea | Síntesis de aprendizaje |
+| Bibliografía | Solo lo citado, con título oficial, BOE y entrada en vigor; sentencias con ECLI y CENDOJ; módulos con año | Extensión; trazabilidad |
 
 ## 4. Lo que debes comprobar tú antes de entregar
 
-Desde este entorno no he podido abrir el BOE ni el CENDOJ, así que estas comprobaciones quedan pendientes y son rápidas.
+Desde este entorno no se abren el BOE, el CENDOJ ni el INSST, así que quedan pendientes estas comprobaciones, todas rápidas.
 
-Enlace del BOE. Abre https://www.boe.es/buscar/act.php?id=BOE-A-2000-15060 y confirma que carga el texto consolidado de la LISOS. Si lo compruebas en noviembre, cambia "comprobado en octubre de 2026" por la fecha real.
+El enlace de la 4.2 es el mismo que pusiste en la PEC 1 para la guía del INSST. Ábrelo y confirma que sigue cargando la guía; si el INSST ha cambiado la dirección, busca "Guía técnica equipos de trabajo" en su catálogo y sustituye la URL en el texto y en la bibliografía.
 
-Cuantías del art. 40.2 LISOS. El texto dice que las graves van de 2.451 a 49.180 euros y las muy graves de 49.181 a 983.736. Son las cuantías vigentes desde la actualización de 2021, pero confírmalas en el consolidado, porque la pregunta pide expresamente la norma actualizada.
+Los dos ECLI (ES:TSJCL:2025:2645 y ES:TS:2015:2827) abren en CENDOJ y dicen lo que el texto les atribuye. La STSJ de Madrid de 11 de julio de 2005 (rec. 2478/2005) está citada tal como aparece en el módulo 3; si quieres, localízala en CENDOJ y añade el ECLI.
 
-Sentencias. Abre en CENDOJ los tres ECLI (ES:TSJCL:2025:2645, ES:TS:2018:3454 y ES:TS:2015:2827) y comprueba que lo que dice el texto de cada una es cierto: la del TSJ de Castilla y León, caída sin arnés con recargo para la empresa y la contratista; la STS 842/2018, responsabilidad solidaria de la principal en la caída de un trabajador de una subcontrata; la STS de 4 de mayo de 2015, condena a ETT y usuaria por falta de formación. Yo no he podido leerlas.
+Dos fechas de entrada en vigor que no he podido verificar: Ley 17/2015 (he puesto 10/01/2016, seis meses tras su publicación) y RD 524/2023 (23/06/2023). El resto de fechas salen de tu PEC 1 o de la norma.
 
-Tres referencias que conviene mirar en el consolidado: DA 2.ª apartado 3 de la Ley 14/1994 (requisitos de la ETT para ceder en construcción), art. 7 RD 216/1999 (comunicación por escrito de los daños a la ETT) y art. 12.3 Ley 14/1994 (formación preventiva a cargo de la ETT).
+Artículos que conviene mirar en el texto consolidado: DA 2.ª apartado 3 de la Ley 14/1994; art. 12.3 de la Ley 14/1994; art. 19.2.b LISOS; art. 15 RD 1627/1997 (información a los trabajadores); art. 8 RD 773/1997 (formación sobre EPI); art. 5 RD 1215/1997 (formación sobre equipos); art. 6 RD 486/2010 (información y formación); arts. 9, 36 y 37 del RD 39/1997; art. 10 de la Ley 32/2006.
 
-La fotografía. Ya la he visto en tu captura del enunciado y confirma el análisis: operarios sobre la estructura de vigas sin arnés, sin barandillas y sin casco, dos de ellos soldando con cajas de cartón por pantalla, y guantes y manga larga en el soldador del primer plano. El texto de 1.1 y de 2.3 habla ahora de dos soldadores, que es lo que se ve.
-
-Dos versiones del enunciado. La página 4 del PDF que tienes en el escritorio (PEC2_Enunciado_Fundamentos_PRL.pdf) plantea unas preguntas 2, 3 y 4 distintas de las del archivo "pec 2.txt" del repositorio, que es el que responde tu borrador. En el PDF, la 2 trata de una actividad formativa para ese puesto (2.1 y 2.2), la 3 del ámbito de aplicación de la LPRL (3.1 y 3.2) y la 4 del marco normativo posterior a la LPRL (4.1, 4.2 y 4.3), estas dos últimas iguales a las de la PEC 1. En el txt, la 2 son los principios de la acción preventiva (2.1 a 2.3) y la 3 la LISOS (3.1 y 3.2). Antes de entregar hay que comprobar en el aula cuál es el enunciado vigente, porque si es el del PDF habría que rehacer la segunda mitad del documento.
-
-Enunciado incompleto. El archivo "pec 2.txt" se corta en la pregunta 3.2 ("relaciona las acciones empresariales que constituyen infracciones preventivas, la oblig..."). La respuesta relaciona acción, obligación incumplida, infracción y sanción, que es la lectura más probable. Comprueba en el enunciado original que no pide nada más y que no existe una 3.3.
-
-Plantilla y páginas. Pega el contenido en la Hoja de respuestas oficial y comprueba en Word que sigue en 6 páginas con Arial 11 e interlineado 1,5. La plantilla puede tener márgenes distintos a los del documento generado; si se pasa, la frase más prescindible es la última de 1.5 ("La ETT responde de sus fallos...") seguida de su síntesis.
+Pega el contenido en la Hoja de respuestas oficial y confirma en Word que sigue en 6 páginas. El PDF adjunto está generado con una fuente equivalente a Arial; el Word lleva Arial. Si se pasara, la frase más prescindible es la última de la 2.2 (organización) seguida de la síntesis de la 4.2.
 
 ## 5. Qué cuidar en adelante
 
-Cada afirmación jurídica termina con su paréntesis de artículo y norma, y antes de la afirmación va el porqué. Si una frase no se puede apoyar en un artículo, o se reformula como razonamiento a partir de uno, o se quita.
-
-La primera vez que una norma aparece en el texto se escribe su nombre oficial completo; después basta el acrónimo. En la bibliografía solo entra lo citado, con título oficial, BOE y fecha de entrada en vigor.
-
-Los conceptos del módulo 1 (condición de trabajo, factor de riesgo, riesgo laboral, daño) se usan con el nombre exacto del módulo y del art. 4 LPRL, y no con sinónimos descriptivos.
-
-La síntesis de cada pregunta habla de lo que has entendido y de lo que cambia a partir de ahora, en primera persona, sin repetir la respuesta.
-
-Seis páginas es el techo, bibliografía incluida. Se recorta antes de entregar, nunca se confía en que la profesora corrija el exceso.
-
-Las sentencias se citan con ECLI y se comprueban en CENDOJ el día de la entrega; los enlaces se abren una última vez.
-
-## Anexo. Texto original de las dos síntesis sustituidas
-
-Síntesis original de 2.3: "En la gestoría donde trabajo la prevención de las empresas clientes se concierta entera con un servicio ajeno. A mi puesto sí le hicieron la evaluación y cada año me ofrecen el reconocimiento médico, que es voluntario y no suelo hacerme. (art. 22.1, LPRL) Con estos principios delante entiendo que eso cubre el expediente pero no es planificar la prevención, porque nada nace de los riesgos de cada puesto. Se nota la diferencia con los clientes de construcción."
-
-Síntesis original de 3.1: "Buscar el consolidado me ha servido, porque las cuantías del módulo son de 2007 y las vigentes son más altas. En la gestoría tramitamos los partes de accidente de clientes de construcción y los comunicamos por CoNTA. Lo veía como un trámite más y resulta que también está tipificado, ya que no comunicar un accidente leve es infracción leve y no dar cuenta en plazo de uno grave, o no investigar el daño, es grave. (art. 23.3, LPRL; arts. 11.2 y 12.3, LISOS)"
-
-Si las recuperas, vuelve a comprobar que el documento no pasa de 6 páginas.
+Cada afirmación jurídica termina con su paréntesis de artículo y norma, y antes va el porqué. La primera vez que una norma aparece en el texto se escribe su nombre oficial completo. En la bibliografía solo entra lo citado, con título oficial, BOE y entrada en vigor. Los conceptos del módulo se usan con su nombre exacto. La síntesis habla de lo aprendido, no de lo respondido. Seis páginas es el techo, bibliografía incluida, y se recorta antes de entregar. Y cuando una pregunta se repite de una PEC a otra, se responde con la solución oficial de la anterior delante.
