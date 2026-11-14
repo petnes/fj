@@ -1,4 +1,9 @@
-# Notas sobre la versión entregable (14/11/2026)
+# Notas sobre los dos archivos (14/11/2026)
+
+## Dos versiones
+- ENTREGA_HOY_...Tarea3_contenidos_UUDD.docx: lo que pide Vimat para la tercera entrega. Apartados 1 a 5 completos (con las correcciones de la revisión anterior), la UD1 desarrollada y la tabla de las quince unidades; los apartados 6, 7 y 8 quedan como epígrafes pendientes, igual que en la entrega anterior; conclusiones y bibliografía. 28 páginas numeradas más portada.
+- COMPLETA_...Programacion_completa.docx: la programación entera, con las fichas UD2 a UD15 y los apartados 6, 7 y 8 redactados. 67 páginas numeradas más portada. Es la base para las próximas entregas.
+- Para enviar la de hoy: quitar el prefijo ENTREGA_HOY_ del nombre del archivo y escribir el asunto como piden (comunidad, apellidos y nombre, curso).
 
 ## Qué contiene el documento
 - Programación completa: apartados 1 a 10, con las 15 unidades (UD1 desarrollada y UD2 a UD15 en ficha), metodología, evaluación, atención a la diversidad, conclusiones y bibliografía.
