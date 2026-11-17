@@ -1,0 +1,47 @@
+GUION PARA EL VÍDEO DE LA PRESENTACIÓN
+
+DIAPOSITIVA 1. PORTADA (unos 25 segundos)
+
+Hola. Me llamo Milagros Moncada Roa y este es mi trabajo final de la asignatura de Riesgos Químicos. He evaluado la exposición laboral al cadmio en un taller donde se cortan y se sueldan perfiles de acero cadmiado. En los próximos minutos resumo cómo lo he planteado, qué resultados he obtenido y qué medidas propongo.
+
+
+DIAPOSITIVA 2. INTRODUCCIÓN Y OBJETIVOS (unos 40 segundos)
+
+El objetivo general es evaluar el riesgo por inhalación y por contacto con el cadmio en ese puesto de soldadura y oxicorte. Para la parte cuantitativa aplico la norma UNE-EN 689, que es la que desarrolla el tema 6. Para la cualitativa, los métodos del tema 8: el método simplificado del INRS adaptado por el INSHT, la herramienta EMKG para la vía dérmica y, como contraste, las bandas de control. Hay tres ideas que atraviesan todo el trabajo. Que los efectos del cadmio son crónicos y acumulativos. Que hay que poner números, es decir, calcular la exposición diaria y el índice de exposición. Y que la comparación se hace con dos valores límite, el que está en vigor ahora y el que entra en julio de 2027.
+
+
+DIAPOSITIVA 3. MARCO NORMATIVO Y TOXICOLOGÍA (unos 45 segundos)
+
+El cadmio tiene una de las clasificaciones más duras del Reglamento CLP: cancerígeno de categoría 1B, mortal por inhalación, mutágeno y tóxico para la reproducción de categoría 2, y tóxico para el riñón y el pulmón tras exposiciones repetidas. El IARC lo incluye en el grupo 1, carcinógeno confirmado en humanos. En cuanto al valor límite, aquí está lo más delicado del trabajo. La directiva europea fija 0,001 miligramos por metro cúbico en fracción inhalable, pero España se acogió al periodo transitorio con control biológico. Por eso, hasta el 11 de julio de 2027, el VLA-ED vigente es 0,002 en fracción respirable, aplicado junto con un valor límite biológico de 2 microgramos de cadmio por gramo de creatinina. Después de esa fecha baja a 0,001.
+
+
+DIAPOSITIVA 4. VÍAS DE ENTRADA Y TOXICOCINÉTICA (unos 50 segundos)
+
+La vía principal es la inhalación. Cuando el arco o la llama tocan el recubrimiento, el cadmio se evapora, porque hierve a 767 grados, y al enfriarse forma humo de óxido de cadmio con partículas por debajo de 1,5 micras. Son partículas que llegan al alvéolo. El IARC recoge retenciones pulmonares de hasta el 20 por ciento en animales, y los modelos de la ATSDR predicen que se absorbe en torno al 40 por ciento de lo inhalado. Lo peor es que se elimina muy despacio: la vida media se estima entre 7 y 16 años según el IARC y entre 20 y 30 según la ATSDR. La piel absorbe menos del 1 por ciento, pero las quemaduras y los cortes del soldeo abren la puerta. Y la vía digestiva aparece por el aclaramiento mucociliar y por comer, beber o fumar con las manos sucias. Por esa vía se absorbe entre el 3 y el 6,5 por ciento, más si faltan reservas de hierro.
+
+
+DIAPOSITIVA 5. EVALUACIÓN DE LA EXPOSICIÓN POR INHALACIÓN (unos 45 segundos)
+
+El muestreo es personal, con el captador dentro de la pantalla de soldar, a menos de 30 centímetros de la nariz. Como el valor límite está definido en fracción respirable, uso un ciclón selector de esa fracción con un filtro de ésteres de celulosa, y una bomba calibrada antes y después de cada medición. Mido cada tarea por separado durante tres jornadas, que es el mínimo que pide la norma para un grupo de exposición similar. El análisis sigue el método MTA/MA-025/A16 del INSHT, con absorción atómica, y cámara de grafito o ICP-MS cuando hace falta más sensibilidad, porque el valor límite es muy bajo. Los datos de las cuatro tareas son los que se ven en pantalla: corte, soldeo, esmerilado y trabajo en zona limpia.
+
+
+DIAPOSITIVA 6. EXPOSICIÓN DIARIA E ÍNDICE DE EXPOSICIÓN (unos 45 segundos)
+
+Con esos tiempos y esas concentraciones, la exposición diaria ponderada a ocho horas sale en 0,00202 miligramos por metro cúbico. Frente al valor límite vigente, 0,002, el índice de exposición es 1,01. Supera la unidad, aunque sea por poco. Y frente al valor de 2027 el índice es 2,02, el doble de lo permitido. La norma es clara: basta con que una medición supere el VLA para concluir no conformidad. Y hay un matiz más. El valor de 2027 se mide en fracción inhalable, que siempre es igual o mayor que la respirable, así que ese 2,02 es un mínimo.
+
+
+DIAPOSITIVA 7. VALORACIÓN GLOBAL DE LA EXPOSICIÓN (unos 50 segundos)
+
+Los métodos cualitativos dicen lo mismo que las mediciones. Por bandas de control, el cadmio está en el grupo E por la frase H350, y para ese grupo el modelo no admite matices: nivel de riesgo 4, que exige extracción localizada o confinamiento. Con el método simplificado del tema 8, la clase de peligro es 5, la exposición potencial es 3 y el riesgo potencial vale 10.000 puntos. Multiplicando por la dispersión alta de los humos, el procedimiento dispersivo, la ausencia de ventilación mecánica y el factor de corrección del VLA, el riesgo por inhalación sale en 30 millones de puntos, muy por encima de los mil que marcan el riesgo elevado y la prioridad 1. Y para la piel, el EMKG da un riesgo dérmico elevado: categoría E, cantidad importante y más de 15 minutos al día.
+
+
+DIAPOSITIVA 8. MEDIDAS PREVENTIVAS A APLICAR (unos 50 segundos)
+
+Las medidas siguen la jerarquía de la Ley de Prevención y del real decreto de cancerígenos. Lo primero es sustituir el recubrimiento, por cincado o por recubrimientos orgánicos sin metales pesados. Cuando no se pueda, decapar cinco centímetros a cada lado de la línea antes de aplicar calor. Y extracción localizada en origen, con brazos articulados a 20 o 30 centímetros del arco y antorchas con aspiración, filtración HEPA H14 y salida al exterior. La ventilación general no sirve para un cancerígeno: lo reparte por toda la nave. Mientras se instala todo eso, pantallas motorizadas con filtro TH3P, prohibición de comer o fumar en la zona, taquillas dobles y ducha al final del turno, y vigilancia de la salud con cadmio en orina y en sangre y beta-2-microglobulina. Después, una nueva campaña de medición y reevaluaciones según el anexo I de la norma.
+
+
+DIAPOSITIVA 9. CONCLUSIONES (unos 35 segundos)
+
+Para terminar. La exposición medida ya supera el valor límite vigente y duplica el que entra en vigor en 2027. Las mediciones, el método simplificado del tema 8, las bandas de control y el EMKG coinciden. La solución pasa por actuar en el foco: sustituir, decapar y extraer en origen. Y lo que más me ha llamado la atención al hacer el trabajo es que una situación que hoy está justo en el límite será claramente ilegal dentro de pocos meses, así que la extracción localizada no es una mejora opcional, es una necesidad. Muchas gracias.
+
+
