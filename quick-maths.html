@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="claude:viewport-fit-sides" content="cover" />
+  <meta name="theme-color" content="#150b2e" />
+  <meta name="description" content="Reto diario de cálculo mental: cinco ecuaciones, cuatro opciones y un cronómetro. Cada fallo suma tres segundos." />
+  <title>Quick Maths</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧮</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind (Play CDN): utilidades de maquetación y tipografía. El resto del estilo va en el <style> de abajo. -->
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Fredoka', 'Nunito', 'system-ui', 'sans-serif'],
+            body: ['Nunito', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            ink: 'var(--text)',
+            muted: 'var(--muted)',
+            accent: 'var(--accent)',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    /* ==========================================================================
+       TOKENS DE DISEÑO
+       Layout: una columna centrada (máx. 28rem) con tres pantallas que se
+       alternan (inicio, partida, resultados) sobre un violeta profundo.
+       El juego es oscuro por diseño, así que hay una sola paleta.
+       ========================================================================== */
+    :root {
+      color-scheme: dark;
+      /* Fondo y superficies */
+      --bg: #150b2e;
+      --glow-1: 91 52 184;      /* violeta, en canales RGB para combinar con alpha */
+      --glow-2: 193 63 165;     /* magenta */
+      --surface: rgba(255, 255, 255, 0.07);
+      --surface-2: rgba(255, 255, 255, 0.13);
+      --border: rgba(255, 255, 255, 0.14);
+      /* Texto */
+      --text: #f7f3ff;
+      --muted: #b9addf;
+      /* Acento y estados */
+      --accent: #ffd23f;  --accent-dark: #c79b05;
+      --ok: #2fd47d;      --ok-dark: #178f50;
+      --bad: #ff4d5e;     --bad-dark: #b02736;
+      /* Calculadora: pantalla LCD y carcasa */
+      --lcd: #d6f3e1; --lcd-2: #a8dbba; --lcd-text: #10321d;
+      --calc-face: #f8f5ff; --calc-face-2: #ddd4f7;
+      --calc-side: #b3a2e3; --calc-side-2: #8772c5;
+      /* Arcoíris de las teclas: cara y canto inferior */
+      --c-red: #ff4d5e;    --c-red-d: #b02736;
+      --c-orange: #ff8c42; --c-orange-d: #c25718;
+      --c-yellow: #ffd23f; --c-yellow-d: #c79b05;
+      --c-green: #3ddc84;  --c-green-d: #1f9a58;
+      --c-blue: #3fa9f5;   --c-blue-d: #1c6db0;
+      --c-purple: #9b5de5; --c-purple-d: #6433a8;
+      --c-pink: #ff6fb5;   --c-pink-d: #c23a80;
+      /* Tipografías */
+      --font-display: 'Fredoka', 'Nunito', system-ui, sans-serif;
+      --font-body: 'Nunito', system-ui, sans-serif;
+    }
+
+    /* ==========================================================================
+       BASE
+       ========================================================================== */
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    [hidden] { display: none !important; }
+    button {
+      font: inherit; color: inherit; border: 0; background: none; cursor: pointer;
+      -webkit-tap-highlight-color: transparent; touch-action: manipulation;
+      user-select: none; -webkit-user-select: none;
+    }
+    button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+    /* Contenedor principal: columna centrada con márgenes seguros en móvil */
+    .app {
+      position: relative; z-index: 1;
+      min-height: 100%;
+      max-width: 28rem; margin: 0 auto;
+      display: flex; flex-direction: column;
+      padding-left: max(16px, env(safe-area-inset-left, 0px));
+      padding-right: max(16px, env(safe-area-inset-right, 0px));
+      padding-block: 0;
+    }
+
+    /* ==========================================================================
+       FONDO: resplandor, símbolos flotantes y destello de feedback
+       ========================================================================== */
+    .bg-glow {
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background:
+        radial-gradient(70% 55% at 15% 0%, rgb(var(--glow-1) / 0.85), transparent 65%),
+        radial-gradient(55% 45% at 90% 100%, rgb(var(--glow-2) / 0.5), transparent 65%);
+      transition: opacity 0.7s ease;
+    }
+    body[data-screen="game"] .bg-glow { opacity: 0.4; }   /* durante la partida el fondo se oscurece */
+
+    .symbols { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+    .symbols span {
+      position: absolute; bottom: -12vh;
+      font-family: var(--font-display); font-weight: 700;
+      color: rgba(255, 255, 255, 0.08);
+      animation: drift linear infinite;
+    }
+
+    .flash { position: fixed; inset: 0; z-index: 5; pointer-events: none; opacity: 0; }
+    .flash.is-ok  { background: radial-gradient(circle at 50% 60%, rgba(47, 212, 125, 0.05), rgba(47, 212, 125, 0.45)); animation: flash 0.5s ease-out; }
+    .flash.is-bad { background: radial-gradient(circle at 50% 60%, rgba(255, 77, 94, 0.05), rgba(255, 77, 94, 0.5)); animation: flash 0.55s ease-out; }
+
+    /* ==========================================================================
+       BARRA SUPERIOR
+       ========================================================================== */
+    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; padding-block: 0.9rem 0.25rem; min-height: 3.6rem; }
+    .topbar .icon-btn:last-child { margin-left: auto; }
+    .icon-btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 2.6rem; height: 2.6rem; border-radius: 999px;
+      background: var(--surface); border: 1px solid var(--border);
+      font-size: 1.15rem; line-height: 1;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .icon-btn:hover { background: var(--surface-2); }
+    .icon-btn:active { transform: scale(0.94); }
+    .brand { font-family: var(--font-display); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.9rem; color: var(--muted); }
+
+    /* ==========================================================================
+       PANTALLAS Y COMPONENTES COMUNES
+       ========================================================================== */
+    .screen { flex: 1; display: flex; flex-direction: column; animation: screenIn 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+    .eyebrow { font-size: 0.78rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+    .title {
+      font-family: var(--font-display); font-weight: 700;
+      font-size: clamp(2.6rem, 11vw, 3.6rem); line-height: 0.95; letter-spacing: 0.01em; text-wrap: balance;
+    }
+    .title-gradient {
+      background: linear-gradient(90deg, var(--c-orange), var(--c-yellow) 30%, var(--c-green) 55%, var(--c-blue) 80%, var(--c-pink));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .card {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 22px;
+      backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    }
+    .card b { color: var(--accent); font-weight: 800; }
+
+    /* Botón principal: amarillo con relieve, como una tecla grande */
+    .btn-primary {
+      font-family: var(--font-display); font-weight: 600; font-size: 1.4rem; letter-spacing: 0.02em;
+      color: #3a2a00; padding: 0.95rem 2.6rem; border-radius: 999px;
+      background: linear-gradient(180deg, #ffe16b, var(--accent));
+      box-shadow: 0 7px 0 var(--accent-dark), 0 16px 26px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+      transition: transform 0.08s ease, box-shadow 0.08s ease, filter 0.15s;
+    }
+    .btn-primary:hover { filter: brightness(1.05); }
+    .btn-primary:active { transform: translateY(5px); box-shadow: 0 2px 0 var(--accent-dark), 0 6px 10px rgba(0, 0, 0, 0.35); }
+    .btn-ghost {
+      font-weight: 800; font-size: 1rem; padding: 0.85rem 1.2rem; border-radius: 999px;
+      background: var(--surface); border: 1px solid var(--border); color: var(--text);
+      transition: background 0.15s, transform 0.1s;
+    }
+    .btn-ghost:hover { background: var(--surface-2); }
+    .btn-ghost:active { transform: scale(0.97); }
+
+    /* ==========================================================================
+       CALCULADORA 3D (portada)
+       ========================================================================== */
+    .calc { perspective: 1100px; width: min(280px, 74vw); margin-inline: auto; margin-bottom: 16px; }   /* el margen deja sitio al canto 3D */
+    .calc-body {
+      position: relative;
+      transform: rotateX(10deg) rotateY(-9deg);
+      border-radius: 30px; padding: 16px 16px 20px;
+      background: linear-gradient(160deg, var(--calc-face), var(--calc-face-2));
+      box-shadow:
+        0 12px 0 var(--calc-side),                 /* canto superior de la carcasa */
+        0 24px 0 var(--calc-side-2),               /* canto inferior, más oscuro */
+        0 44px 60px -8px rgba(0, 0, 0, 0.6),       /* sombra proyectada */
+        inset 0 2px 0 rgba(255, 255, 255, 0.9);
+      animation: float 5.5s ease-in-out infinite;
+    }
+    .calc-body::before { /* brillo diagonal del plástico */
+      content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+      background: linear-gradient(115deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0) 45%);
+    }
+    .calc-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; padding-inline: 4px; }
+    .calc-brand { font-family: var(--font-display); font-weight: 700; font-size: 0.72rem; letter-spacing: 0.12em; color: #6a56a8; text-transform: uppercase; }
+    .solar { display: flex; gap: 2px; }
+    .solar i { width: 9px; height: 14px; border-radius: 2px; background: linear-gradient(180deg, #3b3252, #1a1527); }
+
+    /* Pantalla LCD (se reutiliza en la partida) */
+    .lcd {
+      border-radius: 14px; padding: 12px 14px; min-height: 60px;
+      background: linear-gradient(180deg, var(--lcd), var(--lcd-2));
+      box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.28), inset 0 -2px 0 rgba(255, 255, 255, 0.55);
+      color: var(--lcd-text); font-family: var(--font-display); font-weight: 600;
+      text-align: right; font-variant-numeric: tabular-nums;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .calc-screen { font-size: 1.6rem; line-height: 1.15; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+    .calc-keys { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 14px; }
+
+    /* Tecla con relieve: la cara usa --k, el canto --kd y --depth marca el grosor */
+    .key, .answer {
+      --k: var(--c-blue); --kd: var(--c-blue-d); --depth: 5px;
+      position: relative; border-radius: 16px; color: #fff;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0.06) 55%, rgba(0, 0, 0, 0.06)),
+        var(--k);
+      box-shadow:
+        0 var(--depth) 0 var(--kd),
+        0 calc(var(--depth) + 8px) 18px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.55);
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.22);
+      transition: transform 0.08s ease, box-shadow 0.08s ease, filter 0.2s ease;
+    }
+    .key:active, .answer:active:not(:disabled) {
+      transform: translateY(calc(var(--depth) - 1px));
+      box-shadow: 0 1px 0 var(--kd), 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    }
+    .key { aspect-ratio: 1; font-family: var(--font-display); font-weight: 600; font-size: 1.35rem; }
+
+    /* ==========================================================================
+       PARTIDA
+       ========================================================================== */
+    .progress { display: flex; gap: 6px; margin-top: 8px; }
+    .seg { flex: 1; height: 7px; border-radius: 999px; background: var(--surface-2); transition: background 0.3s; }
+    .seg.is-done { background: linear-gradient(90deg, var(--c-green), var(--c-blue)); }
+    .seg.is-current { background: var(--accent); animation: segPulse 1s ease-in-out infinite; }
+
+    .timer-box {
+      display: inline-flex; align-items: baseline; gap: 4px; justify-content: center;
+      font-family: var(--font-display); font-weight: 600; line-height: 1;
+      font-size: clamp(3.2rem, 15vw, 4.4rem); font-variant-numeric: tabular-nums;
+    }
+    .timer-box.is-hit { animation: timerHit 0.5s ease; }
+    .timer-unit { font-size: 0.4em; color: var(--muted); font-weight: 600; }
+    .penalty-layer { position: absolute; inset: 0; pointer-events: none; }
+    .penalty-pop {
+      position: absolute; right: 8%; top: 0;
+      font-family: var(--font-display); font-weight: 700; font-size: 1.5rem; color: var(--bad);
+      animation: rise 1s ease-out forwards;
+    }
+
+    /* La partida se juega sobre una calculadora grande: pantalla arriba, cuatro teclas abajo */
+    .frame {
+      border-radius: 28px; padding: 14px 14px 18px;
+      background: linear-gradient(160deg, var(--calc-face), var(--calc-face-2));
+      box-shadow:
+        0 10px 0 var(--calc-side),
+        0 20px 0 var(--calc-side-2),
+        0 34px 50px -10px rgba(0, 0, 0, 0.6),
+        inset 0 2px 0 rgba(255, 255, 255, 0.9);
+    }
+    .frame.anim-pop { animation: popIn 0.35s cubic-bezier(0.2, 0.8, 0.2, 1); }
+    .lcd-game { min-height: 118px; padding: 16px 18px; text-align: center; border-radius: 18px; }
+    .equation { font-size: clamp(2.2rem, 11vw, 2.9rem); line-height: 1.1; font-weight: 600; letter-spacing: 0.02em; }
+    .feedback { min-height: 1.4rem; margin-top: 6px; font-family: var(--font-body); font-weight: 900; font-size: 1rem; letter-spacing: 0.02em; }
+    .feedback.is-ok  { color: var(--ok-dark); }
+    .feedback.is-bad { color: var(--bad-dark); }
+    .feedback.is-go  { color: #2a6a45; }
+
+    .answers { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 14px; }
+    .answer {
+      --depth: 7px; min-height: 86px; border-radius: 20px;
+      font-family: var(--font-display); font-weight: 600; font-size: clamp(1.9rem, 9vw, 2.3rem);
+      font-variant-numeric: tabular-nums;
+      animation: popIn 0.32s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    }
+    .answer:disabled { cursor: default; }
+    .answer:disabled:not(.is-correct):not(.is-wrong) { filter: saturate(0.4) brightness(0.72); }
+    .answer.is-correct { --k: var(--ok);  --kd: var(--ok-dark);  animation: bounceOk 0.45s ease; }
+    .answer.is-wrong   { --k: var(--bad); --kd: var(--bad-dark); animation: shake 0.45s cubic-bezier(0.36, 0.07, 0.19, 0.97) both; }
+    .answer.is-correct::after, .answer.is-wrong::after {
+      position: absolute; top: 6px; right: 10px; font-size: 1rem; font-weight: 800; opacity: 0.95;
+    }
+    .answer.is-correct::after { content: "✓"; }
+    .answer.is-wrong::after   { content: "✕"; }
+
+    .hint { margin-top: 36px; text-align: center; font-size: 0.8rem; color: var(--muted); }   /* por debajo del canto 3D del marco */
+    .hint b { color: var(--text); }
+    @media (hover: none) { .hint { display: none; } }   /* en pantallas táctiles no hay teclado */
+
+    /* Cuenta atrás antes de arrancar el cronómetro */
+    .countdown {
+      position: fixed; inset: 0; z-index: 20; display: flex; align-items: center; justify-content: center;
+      background: rgba(21, 11, 46, 0.55); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+    }
+    .countdown span {
+      font-family: var(--font-display); font-weight: 700; font-size: clamp(6rem, 40vw, 10rem); line-height: 1;
+      color: var(--accent); text-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    }
+    .countdown span.anim-count { animation: countPop 0.65s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+
+    /* ==========================================================================
+       RESULTADOS
+       ========================================================================== */
+    .result-title { font-family: var(--font-display); font-weight: 700; font-size: clamp(2rem, 9vw, 2.6rem); line-height: 1.05; text-wrap: balance; }
+    .stars { font-size: 1.6rem; letter-spacing: 0.12em; color: var(--accent); margin-top: 4px; }
+    .final-time {
+      font-family: var(--font-display); font-weight: 700; font-size: clamp(3.4rem, 18vw, 5rem); line-height: 1;
+      font-variant-numeric: tabular-nums; display: inline-flex; align-items: baseline; gap: 4px;
+    }
+    .record {
+      display: inline-block; margin-top: 10px; padding: 6px 14px; border-radius: 999px;
+      background: rgba(255, 210, 63, 0.16); border: 1px solid rgba(255, 210, 63, 0.45);
+      color: var(--accent); font-weight: 800; font-size: 0.9rem;
+      animation: bounceOk 0.6s ease 0.2s both;
+    }
+    .summary { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+    .summary-row {
+      display: grid; grid-template-columns: 1.6rem 1fr auto; align-items: center; gap: 10px;
+      padding: 9px 12px; border-radius: 14px; background: var(--surface); border: 1px solid var(--border); font-size: 0.95rem;
+    }
+    .summary-n { width: 1.6rem; height: 1.6rem; border-radius: 999px; background: var(--surface-2); display: grid; place-items: center; font-weight: 900; font-size: 0.75rem; color: var(--muted); }
+    .summary-eq { font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; text-align: left; font-variant-numeric: tabular-nums; min-width: 0; }
+    .summary-time { font-weight: 800; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .summary-time.is-ok  { color: var(--ok); }
+    .summary-time.is-bad { color: var(--bad); }
+
+    /* ==========================================================================
+       ANIMACIONES
+       ========================================================================== */
+    @keyframes float    { 0%, 100% { transform: rotateX(10deg) rotateY(-9deg) translateY(0); } 50% { transform: rotateX(10deg) rotateY(-9deg) translateY(-10px); } }
+    @keyframes drift    { from { transform: translateY(0) rotate(0deg); } to { transform: translateY(-125vh) rotate(30deg); } }
+    @keyframes flash    { from { opacity: 1; } to { opacity: 0; } }
+    @keyframes screenIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+    @keyframes popIn    { from { opacity: 0; transform: translateY(14px) scale(0.96); } to { opacity: 1; transform: none; } }
+    @keyframes shake    { 10%, 90% { transform: translateX(-2px); } 20%, 80% { transform: translateX(4px); } 30%, 50%, 70% { transform: translateX(-7px); } 40%, 60% { transform: translateX(7px); } }
+    @keyframes bounceOk { 0% { transform: scale(1); } 40% { transform: scale(1.08); } 100% { transform: scale(1); } }
+    @keyframes rise     { 0% { opacity: 0; transform: translateY(8px) scale(0.7); } 20% { opacity: 1; transform: translateY(0) scale(1.15); } 100% { opacity: 0; transform: translateY(-34px) scale(1); } }
+    @keyframes timerHit { 0%, 100% { color: var(--text); transform: scale(1); } 30% { color: var(--bad); transform: scale(1.07); } }
+    @keyframes segPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.45; } }
+    @keyframes countPop { 0% { opacity: 0; transform: scale(0.3); } 30% { opacity: 1; transform: scale(1.15); } 70% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(1.4); } }
+
+    @media (max-height: 780px) { .calc { width: min(240px, 68vw); } .title { font-size: clamp(2.2rem, 9vw, 3rem); } }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+      .calc-body { animation: none; }
+    }
+  </style>
+</head>
+
+<body data-screen="start">
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div id="symbols" class="symbols" aria-hidden="true"></div>
+  <div id="flash" class="flash" aria-hidden="true"></div>
+
+  <div class="app">
+    <!-- Barra superior: abandonar (solo en partida), marca y sonido -->
+    <header class="topbar">
+      <button id="btnQuit" class="icon-btn" type="button" aria-label="Abandonar la partida" hidden>✕</button>
+      <span id="brand" class="brand" hidden>Quick Maths</span>
+      <button id="btnSound" class="icon-btn" type="button" aria-label="Silenciar el sonido" aria-pressed="false">🔊</button>
+    </header>
+
+    <!-- ================= PANTALLA DE INICIO ================= -->
+    <section id="screen-start" class="screen items-center justify-center text-center gap-5 pb-10">
+      <div>
+        <p class="eyebrow">Reto diario de cálculo mental</p>
+        <h1 class="title mt-2">QUICK <span class="title-gradient">MATHS</span></h1>
+      </div>
+
+      <!-- Calculadora 3D: decorativa, pero las teclas funcionan -->
+      <div class="calc" role="group" aria-label="Calculadora">
+        <div class="calc-body">
+          <div class="calc-top">
+            <span class="calc-brand">Quick Maths</span>
+            <span class="solar" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          </div>
+          <div class="lcd"><div id="calcScreen" class="calc-screen" aria-live="polite">0</div></div>
+          <div id="calcKeys" class="calc-keys"></div>
+        </div>
+      </div>
+
+      <div class="card w-full px-5 py-3.5 text-[0.95rem] leading-normal">
+        <p>Resuelve <b>5 ecuaciones</b> lo más rápido que puedas.</p>
+        <p class="mt-1.5">Cada una tiene <b>4 opciones</b>. Toca la correcta.</p>
+        <p class="mt-1.5">Cada fallo suma <b>+3 s</b>. Gana el tiempo más bajo.</p>
+      </div>
+
+      <div>
+        <button id="btnStart" class="btn-primary" type="button">¡Empezar!</button>
+        <p id="bestToday" class="mt-4 text-sm font-bold text-muted">Todavía no has jugado hoy</p>
+      </div>
+    </section>
+
+    <!-- ================= PANTALLA DE PARTIDA ================= -->
+    <section id="screen-game" class="screen pb-8" hidden>
+      <div class="flex items-end justify-between text-sm font-extrabold text-muted">
+        <span>Ecuación <span id="qIndex" class="text-ink text-base">1</span>/<span id="qTotal">5</span></span>
+        <span id="penaltyCount">0 fallos</span>
+      </div>
+      <div id="progress" class="progress" aria-hidden="true"></div>
+
+      <div class="relative mt-6 text-center">
+        <div id="timerBox" class="timer-box" role="timer"><span id="timer">0.00</span><span class="timer-unit">s</span></div>
+        <div id="penaltyLayer" class="penalty-layer" aria-hidden="true"></div>
+      </div>
+
+      <div id="frame" class="frame mt-5">
+        <div class="lcd lcd-game">
+          <div id="equation" class="equation"></div>
+          <div id="feedback" class="feedback" aria-live="polite"></div>
+        </div>
+        <div id="answers" class="answers" role="group" aria-label="Opciones de respuesta"></div>
+      </div>
+
+      <p class="hint">Con teclado: pulsa <b>1</b>, <b>2</b>, <b>3</b> o <b>4</b> para responder.</p>
+
+      <div id="countdown" class="countdown" hidden aria-live="assertive"><span id="countdownText">3</span></div>
+    </section>
+
+    <!-- ================= PANTALLA DE RESULTADOS ================= -->
+    <section id="screen-result" class="screen items-center justify-center text-center gap-5 pb-10" hidden>
+      <div>
+        <p class="eyebrow">Partida completada</p>
+        <h2 id="ratingTitle" class="result-title mt-2"></h2>
+        <div id="stars" class="stars" role="img" aria-label=""></div>
+      </div>
+
+      <div class="card w-full px-5 py-5">
+        <p class="eyebrow">Tiempo total</p>
+        <p class="final-time mt-1"><span id="finalTime">0.00</span><span class="timer-unit">s</span></p>
+        <p id="finalDetail" class="mt-2 text-sm font-bold text-muted"></p>
+        <p id="recordMsg" class="record" hidden>🏆 ¡Nuevo mejor tiempo de hoy!</p>
+        <p id="bestResult" class="mt-3 text-sm font-bold text-muted"></p>
+      </div>
+
+      <p id="ratingText" class="text-[0.98rem] text-muted leading-relaxed px-2"></p>
+
+      <ul id="summary" class="summary w-full" aria-label="Resumen de la partida"></ul>
+
+      <div class="w-full flex flex-col gap-3 mt-1">
+        <button id="btnAgain" class="btn-primary w-full" type="button">Jugar otra vez</button>
+        <div class="flex gap-3">
+          <button id="btnShare" class="btn-ghost flex-1" type="button">Copiar resultado</button>
+          <button id="btnHome" class="btn-ghost flex-1" type="button">Inicio</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    (() => {
+      'use strict';
+
+      /* ================================================================
+         1. CONFIGURACIÓN DEL JUEGO
+         ================================================================ */
+      const CONFIG = {
+        TOTAL_QUESTIONS: 5,        // Ecuaciones por partida
+        PENALTY_MS: 3000,          // Penalización por cada fallo
+        ADVANCE_ON_WRONG: false,   // false: la ecuación se repite hasta acertar. true: al fallar se pasa a la siguiente
+        NEXT_DELAY_MS: 320,        // Pausa entre el acierto y la siguiente ecuación (el cronómetro sigue corriendo)
+        COUNTDOWN_STEP_MS: 650,    // Duración de cada número de la cuenta atrás (no cuenta como tiempo de juego)
+        STORAGE_PREFIX: 'quickmaths:',
+      };
+
+      /* Valoración del resultado por tramos de tiempo total (segundos, límite superior de cada tramo) */
+      const RATINGS = [
+        { max: 9,        stars: 5, title: '¡Mente de calculadora!', text: 'Un tiempo de élite. Muy poca gente baja de los nueve segundos.' },
+        { max: 13,       stars: 4, title: '¡Rapidísimo!',           text: 'Gran resultado. Ya respondes casi sin pensar.' },
+        { max: 17,       stars: 3, title: '¡Buen tiempo!',          text: 'Sólido. Con un poco de práctica bajas de los trece segundos.' },
+        { max: 23,       stars: 2, title: 'No está mal',            text: 'Vas por buen camino. Fíjate en qué operaciones te frenan.' },
+        { max: Infinity, stars: 1, title: 'Sigue practicando',      text: 'Cada partida cuenta. La velocidad llega con la repetición.' },
+      ];
+
+      /* Arcoíris de las teclas: cara (--k), canto inferior (--kd) y color del texto */
+      const PALETTE = [
+        { k: 'var(--c-red)',    kd: 'var(--c-red-d)',    text: '#fff' },
+        { k: 'var(--c-orange)', kd: 'var(--c-orange-d)', text: '#fff' },
+        { k: 'var(--c-yellow)', kd: 'var(--c-yellow-d)', text: '#4a3500' },
+        { k: 'var(--c-green)',  kd: 'var(--c-green-d)',  text: '#073b1f' },
+        { k: 'var(--c-blue)',   kd: 'var(--c-blue-d)',   text: '#fff' },
+        { k: 'var(--c-purple)', kd: 'var(--c-purple-d)', text: '#fff' },
+        { k: 'var(--c-pink)',   kd: 'var(--c-pink-d)',   text: '#fff' },
+      ];
+
+      /* Colores fijos de los cuatro botones de respuesta (naranja, azul, morado y rosa).
+         El rojo y el verde se reservan para el feedback de fallo y acierto. */
+      const ANSWER_COLORS = [PALETTE[1], PALETTE[4], PALETTE[5], PALETTE[6]];
+
+      /* Teclas de la calculadora de la portada, en orden de lectura (4 columnas) */
+      const CALC_KEYS = ['7', '8', '9', '÷', '4', '5', '6', '×', '1', '2', '3', '−', 'C', '0', '=', '+'];
+
+      /* ================================================================
+         2. UTILIDADES
+         ================================================================ */
+      const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+      const pick = (list) => list[Math.floor(Math.random() * list.length)];
+
+      /* Mezcla un array in situ (Fisher-Yates) y lo devuelve */
+      function shuffle(list) {
+        for (let i = list.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [list[i], list[j]] = [list[j], list[i]];
+        }
+        return list;
+      }
+
+      /* Milisegundos → "12.34" */
+      const fmtTime = (ms) => (Math.max(0, ms) / 1000).toFixed(2);
+
+      /* Clave del día en hora local, p. ej. "2026-11-17" */
+      function todayKey() {
+        const d = new Date();
+        const pad = (n) => String(n).padStart(2, '0');
+        return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+      }
+
+      /* localStorage protegido: en navegación privada o con el almacenamiento bloqueado puede lanzar error */
+      function load(key, fallback) {
+        try {
+          const raw = localStorage.getItem(CONFIG.STORAGE_PREFIX + key);
+          return raw === null ? fallback : JSON.parse(raw);
+        } catch (_) {
+          return fallback;
+        }
+      }
+      function save(key, value) {
+        try {
+          localStorage.setItem(CONFIG.STORAGE_PREFIX + key, JSON.stringify(value));
+        } catch (_) {
+          /* Sin almacenamiento disponible: se juega igual, pero no se guarda el récord */
+        }
+      }
+
+      /* Vuelve a lanzar una animación CSS: quita la clase, fuerza un reflow y la añade de nuevo */
+      function restartAnimation(el, className) {
+        el.classList.remove(className);
+        void el.offsetWidth;
+        el.classList.add(className);
+      }
+
+      /* Vibración breve en móviles compatibles */
+      function vibrate(pattern) {
+        try { if (navigator.vibrate) navigator.vibrate(pattern); } catch (_) { /* no disponible */ }
+      }
+
+      /* ================================================================
+         3. SONIDO (Web Audio API, sin archivos externos)
+         ================================================================ */
+      const Sound = (() => {
+        let ctx = null;
+        let muted = load('muted', false) === true;
+
+        function context() {
+          if (ctx) return ctx;
+          const AC = window.AudioContext || window.webkitAudioContext;
+          if (!AC) return null;
+          try { ctx = new AC(); } catch (_) { ctx = null; }
+          return ctx;
+        }
+
+        /* Un tono sencillo con envolvente de ataque y caída */
+        function tone(freq, { type = 'sine', duration = 0.12, gain = 0.16, delay = 0, slideTo = null } = {}) {
+          if (muted) return;
+          const c = context();
+          if (!c) return;
+          if (c.state === 'suspended') c.resume().catch(() => {});
+          const t0 = c.currentTime + delay;
+          const osc = c.createOscillator();
+          const amp = c.createGain();
+          osc.type = type;
+          osc.frequency.setValueAtTime(freq, t0);
+          if (slideTo) osc.frequency.exponentialRampToValueAtTime(slideTo, t0 + duration);
+          amp.gain.setValueAtTime(0.0001, t0);
+          amp.gain.exponentialRampToValueAtTime(gain, t0 + 0.012);
+          amp.gain.exponentialRampToValueAtTime(0.0001, t0 + duration);
+          osc.connect(amp).connect(c.destination);
+          osc.start(t0);
+          osc.stop(t0 + duration + 0.03);
+        }
+
+        return {
+          /* Los navegadores exigen un gesto del usuario antes de reproducir audio */
+          unlock()  { const c = context(); if (c && c.state === 'suspended') c.resume().catch(() => {}); },
+          click()   { tone(720, { type: 'square', duration: 0.05, gain: 0.05 }); },
+          tick()    { tone(520, { type: 'triangle', duration: 0.1, gain: 0.12 }); },
+          go()      { tone(880, { type: 'triangle', duration: 0.2, gain: 0.14 }); },
+          correct() { tone(660, { duration: 0.09 }); tone(990, { duration: 0.16, delay: 0.08 }); },
+          wrong()   { tone(190, { type: 'sawtooth', duration: 0.24, gain: 0.1, slideTo: 110 }); },
+          finish()  { [523, 659, 784, 1047].forEach((f, i) => tone(f, { type: 'triangle', duration: 0.22, delay: i * 0.1, gain: 0.13 })); },
+          toggle()  { muted = !muted; save('muted', muted); return muted; },
+          get muted() { return muted; },
+        };
+      })();
+
+      /* ================================================================
+         4. GENERACIÓN DE ECUACIONES
+         ================================================================ */
+      const OPERATIONS = {
+        add: { symbol: '+', make() { const a = rand(6, 70),  b = rand(6, 70);    return { a, b, answer: a + b }; } },
+        sub: { symbol: '−', make() { const a = rand(20, 99), b = rand(3, a - 3); return { a, b, answer: a - b }; } },
+        mul: { symbol: '×', make() { const a = rand(2, 12),  b = rand(3, 12);    return { a, b, answer: a * b }; } },
+        div: { symbol: '÷', make() { const b = rand(2, 12),  q = rand(2, 12);    return { a: b * q, b, answer: q }; } },
+      };
+
+      /* Tres respuestas incorrectas pero creíbles: errores típicos y valores cercanos a la correcta */
+      function makeDistractors(type, a, b, answer) {
+        const candidates = [];
+        if (type === 'add' || type === 'sub') {
+          candidates.push(answer + 1, answer - 1, answer + 2, answer - 2, answer + 10, answer - 10,
+                          answer + 3, answer - 3, answer + 9, answer - 9, answer + 11, answer - 11);
+        } else if (type === 'mul') {
+          candidates.push(answer + a, answer - a, answer + b, answer - b, answer + 1, answer - 1,
+                          answer + 2, answer - 2, (a + 1) * (b - 1), (a - 1) * (b + 1), answer + 10, answer - 10);
+        } else {
+          candidates.push(answer + 1, answer - 1, answer + 2, answer - 2, answer + 3, answer - 3,
+                          answer * 2, Math.floor(answer / 2), answer + 4, b);
+        }
+        const minValue = (type === 'add' || type === 'sub') ? 0 : 1;
+        const wrong = [];
+        for (const value of shuffle(candidates)) {
+          if (value !== answer && value >= minValue && Number.isInteger(value) && !wrong.includes(value)) wrong.push(value);
+          if (wrong.length === 3) break;
+        }
+        /* Relleno de seguridad por si los candidatos no bastan (resultados muy pequeños) */
+        for (let delta = 4; wrong.length < 3; delta++) {
+          if (!wrong.includes(answer + delta)) wrong.push(answer + delta);
+        }
+        return wrong;
+      }
+
+      function makeQuestion(type) {
+        const op = OPERATIONS[type];
+        const { a, b, answer } = op.make();
+        return {
+          type, a, b, answer,
+          text: `${a} ${op.symbol} ${b}`,
+          options: shuffle([answer, ...makeDistractors(type, a, b, answer)]),
+        };
+      }
+
+      /* Reparte las cuatro operaciones para que cada partida sea variada y sin ecuaciones repetidas */
+      function buildQuestions() {
+        const base = Object.keys(OPERATIONS);
+        const types = [];
+        while (types.length < CONFIG.TOTAL_QUESTIONS) types.push(...shuffle([...base]));
+        types.length = CONFIG.TOTAL_QUESTIONS;
+        shuffle(types);
+        const seen = new Set();
+        return types.map((type) => {
+          let q;
+          do { q = makeQuestion(type); } while (seen.has(q.text));
+          seen.add(q.text);
+          return q;
+        });
+      }
+
+      /* ================================================================
+         5. CALCULADORA 3D DE LA PORTADA (decorativa, pero funciona)
+         ================================================================ */
+      const els = {};   // referencias al DOM; se rellenan en init()
+
+      const MiniCalc = (() => {
+        let expr = '';              // expresión en pantalla, p. ej. "12×3"
+        let justEvaluated = false;  // tras "=", el siguiente dígito empieza una expresión nueva
+
+        /* Evalúa la expresión sin eval(): primero × y ÷, después + y − */
+        function evaluate(input) {
+          const tokens = input.match(/-?\d+(?:\.\d+)?|[+−×÷]/g) || [];
+          if (!tokens.length) return 0;
+          if (/^[+−×÷]$/.test(tokens[tokens.length - 1])) tokens.pop();   // operador suelto al final
+          const pass = [];
+          for (let i = 0; i < tokens.length; i++) {
+            const t = tokens[i];
+            if (t === '×' || t === '÷') {
+              const left = pass.pop();
+              const right = Number(tokens[++i]);
+              pass.push(t === '×' ? left * right : left / right);
+            } else {
+              pass.push(/^[+−]$/.test(t) ? t : Number(t));
+            }
+          }
+          let result = pass[0];
+          for (let i = 1; i < pass.length; i += 2) {
+            result = pass[i] === '+' ? result + pass[i + 1] : result - pass[i + 1];
+          }
+          return result;
+        }
+
+        function press(key) {
+          Sound.click();
+          if (key === 'C') {
+            expr = '';
+            justEvaluated = false;
+          } else if (key === '=') {
+            const result = evaluate(expr);
+            expr = Number.isFinite(result) ? String(Number(result.toFixed(4))) : 'Error';
+            justEvaluated = true;
+          } else if (/^[+−×÷]$/.test(key)) {
+            if (expr === 'Error') expr = '';
+            if (/[+−×÷]$/.test(expr)) expr = expr.slice(0, -1);   // cambia el operador en vez de duplicarlo
+            if (expr !== '') expr += key;
+            justEvaluated = false;
+          } else {
+            if (justEvaluated || expr === 'Error') expr = '';
+            if (expr.length < 12) expr += key;
+            justEvaluated = false;
+          }
+          els.calcScreen.textContent = expr === '' ? '0' : expr;
+        }
+
+        return { press };
+      })();
+
+      function buildCalculator() {
+        CALC_KEYS.forEach((label, i) => {
+          const row = Math.floor(i / 4);
+          const col = i % 4;
+          const color = PALETTE[(row + col) % PALETTE.length];   // arcoíris en diagonal
+          const key = document.createElement('button');
+          key.type = 'button';
+          key.className = 'key';
+          key.textContent = label;
+          key.style.setProperty('--k', color.k);
+          key.style.setProperty('--kd', color.kd);
+          key.style.color = color.text;
+          key.setAttribute('aria-label', `Tecla ${label}`);
+          key.addEventListener('click', () => MiniCalc.press(label));
+          els.calcKeys.appendChild(key);
+        });
+      }
+
+      /* Símbolos matemáticos flotando de fondo, muy tenues */
+      function buildSymbols() {
+        const glyphs = ['+', '−', '×', '÷', '=', '%', '√', 'π'];
+        for (let i = 0; i < 14; i++) {
+          const s = document.createElement('span');
+          s.textContent = pick(glyphs);
+          s.style.left = `${rand(0, 96)}%`;
+          s.style.fontSize = `${rand(18, 48)}px`;
+          s.style.animationDuration = `${rand(18, 40)}s`;
+          s.style.animationDelay = `-${rand(0, 36)}s`;   // negativo: ya están repartidos al cargar
+          els.symbols.appendChild(s);
+        }
+      }
+
+      /* ================================================================
+         6. ESTADO Y PANTALLAS
+         ================================================================ */
+      const state = {
+        screen: 'start',
+        questions: [],
+        index: 0,               // ecuación actual (0..TOTAL-1)
+        startedAt: 0,           // performance.now() al arrancar el cronómetro
+        lastSplitAt: 0,         // instante del último acierto, para medir cada ecuación
+        penalties: 0,           // fallos totales de la partida
+        errorsThisQuestion: 0,
+        results: [],            // { text, timeMs, errors } por ecuación resuelta
+        lastTotal: 0,           // tiempo final de la última partida (para compartir)
+        running: false,         // cronómetro en marcha
+        locked: false,          // bloquea las respuestas durante las transiciones
+        rafId: 0,
+        timeouts: [],
+      };
+
+      function showScreen(name) {
+        state.screen = name;
+        document.body.dataset.screen = name;
+        ['start', 'game', 'result'].forEach((id) => {
+          document.getElementById(`screen-${id}`).hidden = id !== name;
+        });
+        els.btnQuit.hidden = name !== 'game';
+        els.brand.hidden = name === 'start';
+        window.scrollTo(0, 0);
+      }
+
+      /* ================================================================
+         7. CRONÓMETRO Y TEMPORIZADORES
+         ================================================================ */
+      function elapsedMs() {
+        return (performance.now() - state.startedAt) + state.penalties * CONFIG.PENALTY_MS;
+      }
+      function tickTimer() {
+        if (!state.running) return;
+        els.timer.textContent = fmtTime(elapsedMs());
+        state.rafId = requestAnimationFrame(tickTimer);
+      }
+      function stopTimer() {
+        state.running = false;
+        cancelAnimationFrame(state.rafId);
+      }
+      /* setTimeout con registro, para poder cancelarlos todos al abandonar o reiniciar */
+      function later(fn, ms) {
+        const id = setTimeout(fn, ms);
+        state.timeouts.push(id);
+        return id;
+      }
+      function clearTimeouts() {
+        state.timeouts.forEach(clearTimeout);
+        state.timeouts = [];
+      }
+
+      /* ================================================================
+         8. FLUJO DE LA PARTIDA
+         ================================================================ */
+      function startGame() {
+        Sound.unlock();
+        clearTimeouts();
+        stopTimer();
+        Object.assign(state, {
+          questions: buildQuestions(), index: 0, penalties: 0, errorsThisQuestion: 0, results: [], locked: true,
+        });
+        els.timer.textContent = '0.00';
+        els.penaltyCount.textContent = '0 fallos';
+        els.equation.textContent = '';
+        els.answers.innerHTML = '';
+        els.qTotal.textContent = CONFIG.TOTAL_QUESTIONS;
+        setFeedback('', null);
+        renderProgress();
+        showScreen('game');
+
+        runCountdown(() => {
+          state.startedAt = performance.now();
+          state.lastSplitAt = state.startedAt;
+          state.running = true;
+          tickTimer();
+          showQuestion();
+          setFeedback('¡Ya!', 'go', 900);
+        });
+      }
+
+      /* Cuenta atrás 3, 2, 1 con un tic por número. El cronómetro arranca al terminar. */
+      function runCountdown(onDone) {
+        const steps = ['3', '2', '1'];
+        let i = 0;
+        els.countdown.hidden = false;
+        const next = () => {
+          if (i < steps.length) {
+            els.countdownText.textContent = steps[i++];
+            restartAnimation(els.countdownText, 'anim-count');
+            Sound.tick();
+            later(next, CONFIG.COUNTDOWN_STEP_MS);
+          } else {
+            els.countdown.hidden = true;
+            Sound.go();
+            onDone();
+          }
+        };
+        next();
+      }
+
+      function renderProgress() {
+        els.progress.innerHTML = '';
+        for (let i = 0; i < CONFIG.TOTAL_QUESTIONS; i++) {
+          const seg = document.createElement('span');
+          seg.className = 'seg' + (i < state.index ? ' is-done' : i === state.index ? ' is-current' : '');
+          els.progress.appendChild(seg);
+        }
+        els.qIndex.textContent = Math.min(state.index + 1, CONFIG.TOTAL_QUESTIONS);
+      }
+
+      function showQuestion() {
+        const q = state.questions[state.index];
+        state.errorsThisQuestion = 0;
+        state.locked = false;
+        renderProgress();
+        els.equation.textContent = `${q.text} = ?`;
+        restartAnimation(els.frame, 'anim-pop');
+        els.answers.innerHTML = '';
+        q.options.forEach((value, i) => {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'answer';
+          btn.textContent = value;
+          btn.dataset.value = value;
+          btn.style.setProperty('--k', ANSWER_COLORS[i].k);
+          btn.style.setProperty('--kd', ANSWER_COLORS[i].kd);
+          btn.style.animationDelay = `${i * 45}ms`;   // entrada escalonada
+          btn.setAttribute('aria-label', `Opción ${i + 1}: ${value}`);
+          btn.addEventListener('click', () => onAnswer(btn, value));
+          els.answers.appendChild(btn);
+        });
+      }
+
+      /* Mensaje bajo la ecuación. Si se indica clearAfter, se borra pasado ese tiempo
+         salvo que mientras tanto haya aparecido otro mensaje. */
+      let feedbackToken = 0;
+      function setFeedback(text, kind, clearAfter = 0) {
+        const token = ++feedbackToken;
+        els.feedback.textContent = text;
+        els.feedback.className = 'feedback' + (kind ? ` is-${kind}` : '');
+        if (clearAfter) {
+          later(() => {
+            if (feedbackToken === token) {
+              els.feedback.textContent = '';
+              els.feedback.className = 'feedback';
+            }
+          }, clearAfter);
+        }
+      }
+
+      /* Destello verde o rojo a pantalla completa */
+      function flash(kind) {
+        els.flash.className = 'flash';
+        void els.flash.offsetWidth;
+        els.flash.classList.add(`is-${kind}`);
+      }
+
+      /* "+3 s" que sube y se desvanece junto al cronómetro, que parpadea en rojo */
+      function showPenaltyPop() {
+        const pop = document.createElement('span');
+        pop.className = 'penalty-pop';
+        pop.textContent = `+${CONFIG.PENALTY_MS / 1000} s`;
+        pop.addEventListener('animationend', () => pop.remove());
+        els.penaltyLayer.appendChild(pop);
+        restartAnimation(els.timerBox, 'is-hit');
+      }
+
+      function onAnswer(btn, value) {
+        if (!state.running || state.locked || btn.disabled) return;
+        const q = state.questions[state.index];
+        btn.style.animationDelay = '0ms';   // que la animación de feedback no herede el retardo de entrada
+
+        if (value === q.answer) {
+          registerSolved(btn, q);
+          return;
+        }
+
+        /* Fallo: penalización, feedback fuerte y, según la configuración, repetir o avanzar */
+        state.penalties++;
+        state.errorsThisQuestion++;
+        btn.disabled = true;
+        btn.classList.add('is-wrong');
+        els.penaltyCount.textContent = `${state.penalties} ${state.penalties === 1 ? 'fallo' : 'fallos'}`;
+        setFeedback(`¡Uy! +${CONFIG.PENALTY_MS / 1000} s`, 'bad', 1200);
+        flash('bad');
+        showPenaltyPop();
+        Sound.wrong();
+        vibrate([60, 40, 60]);
+
+        if (CONFIG.ADVANCE_ON_WRONG) {
+          const correctBtn = [...els.answers.children].find((b) => Number(b.dataset.value) === q.answer);
+          registerSolved(correctBtn, q, true);
+        }
+      }
+
+      /* Cierra la ecuación actual, guarda su tiempo y pasa a la siguiente o termina la partida */
+      function registerSolved(btn, q, silent = false) {
+        state.locked = true;
+        const now = performance.now();
+        state.results.push({
+          text: `${q.text} = ${q.answer}`,
+          timeMs: (now - state.lastSplitAt) + state.errorsThisQuestion * CONFIG.PENALTY_MS,
+          errors: state.errorsThisQuestion,
+        });
+        state.lastSplitAt = now;
+        [...els.answers.children].forEach((b) => { b.disabled = true; });
+        if (btn) {
+          btn.style.animationDelay = '0ms';
+          btn.classList.add('is-correct');
+        }
+        if (!silent) {
+          setFeedback(pick(['¡Correcto!', '¡Bien!', '¡Eso es!', '¡Genial!', '¡Sigue así!']), 'ok', 900);
+          flash('ok');
+          Sound.correct();
+          vibrate(20);
+        }
+        state.index++;
+        if (state.index >= CONFIG.TOTAL_QUESTIONS) {
+          finishGame();
+        } else {
+          later(showQuestion, CONFIG.NEXT_DELAY_MS);
+        }
+      }
+
+      function finishGame() {
+        const total = elapsedMs();
+        stopTimer();
+        els.timer.textContent = fmtTime(total);
+        renderProgress();
+        Sound.finish();
+
+        const key = `best:${todayKey()}`;
+        const previousBest = load(key, null);
+        const isRecord = previousBest === null || total < previousBest;
+        if (isRecord) save(key, total);
+
+        later(() => showResults(total, isRecord, previousBest), 700);
+      }
+
+      function abortGame() {
+        clearTimeouts();
+        stopTimer();
+        els.countdown.hidden = true;
+        showScreen('start');
+      }
+
+      /* ================================================================
+         9. RESULTADOS Y MEJOR TIEMPO DEL DÍA
+         ================================================================ */
+      function showResults(total, isRecord, previousBest) {
+        const rating = RATINGS.find((r) => total / 1000 < r.max);
+        const n = state.penalties;
+        state.lastTotal = total;
+
+        els.ratingTitle.textContent = rating.title;
+        els.ratingText.textContent = rating.text;
+        els.stars.textContent = '★'.repeat(rating.stars) + '☆'.repeat(5 - rating.stars);
+        els.stars.setAttribute('aria-label', `${rating.stars} de 5 estrellas`);
+        els.finalTime.textContent = fmtTime(total);
+        els.finalDetail.textContent = n === 0
+          ? 'Sin fallos. Todo el tiempo es tuyo.'
+          : `Incluye ${n} ${n === 1 ? 'fallo' : 'fallos'} (+${(n * CONFIG.PENALTY_MS) / 1000} s de penalización)`;
+        els.recordMsg.hidden = !isRecord;
+        if (previousBest === null) {
+          els.bestResult.textContent = 'Es tu primera partida de hoy.';
+        } else if (isRecord) {
+          els.bestResult.textContent = `Tu anterior mejor tiempo de hoy era ${fmtTime(previousBest)} s.`;
+        } else {
+          els.bestResult.textContent = `Tu mejor tiempo de hoy sigue siendo ${fmtTime(previousBest)} s.`;
+        }
+        renderSummary();
+        updateBestToday();
+        showScreen('result');
+      }
+
+      /* Lista con cada ecuación, su tiempo y sus fallos */
+      function renderSummary() {
+        els.summary.innerHTML = '';
+        state.results.forEach((r, i) => {
+          const li = document.createElement('li');
+          li.className = 'summary-row';
+          const num = document.createElement('span');
+          num.className = 'summary-n';
+          num.textContent = i + 1;
+          const eq = document.createElement('span');
+          eq.className = 'summary-eq';
+          eq.textContent = r.text;
+          const time = document.createElement('span');
+          time.className = 'summary-time ' + (r.errors ? 'is-bad' : 'is-ok');
+          time.textContent = `${fmtTime(r.timeMs)} s` + (r.errors ? ` · ${r.errors} ${r.errors === 1 ? 'fallo' : 'fallos'}` : '');
+          li.append(num, eq, time);
+          els.summary.appendChild(li);
+        });
+      }
+
+      function updateBestToday() {
+        const best = load(`best:${todayKey()}`, null);
+        els.bestToday.textContent = best === null
+          ? 'Todavía no has jugado hoy'
+          : `Mejor tiempo de hoy: ${fmtTime(best)} s`;
+      }
+
+      /* ================================================================
+         10. COMPARTIR RESULTADO
+         ================================================================ */
+      function buildShareText() {
+        const date = new Date().toLocaleDateString('es-ES', { day: '2-digit', month: '2-digit', year: 'numeric' });
+        const squares = state.results.map((r) => (r.errors ? '🟥' : '🟩')).join('');
+        const n = state.penalties;
+        return `Quick Maths · ${date}\n⏱️ ${fmtTime(state.lastTotal)} s · ${n} ${n === 1 ? 'fallo' : 'fallos'}\n${squares}`;
+      }
+
+      async function copyResult() {
+        const text = buildShareText();
+        let ok = false;
+        try {
+          await navigator.clipboard.writeText(text);
+          ok = true;
+        } catch (_) {
+          /* Alternativa para navegadores sin API de portapapeles */
+          const area = document.createElement('textarea');
+          area.value = text;
+          area.setAttribute('readonly', '');
+          area.style.position = 'fixed';
+          area.style.opacity = '0';
+          document.body.appendChild(area);
+          area.select();
+          try { ok = document.execCommand('copy'); } catch (_) { ok = false; }
+          area.remove();
+        }
+        els.btnShare.textContent = ok ? '¡Copiado!' : 'No se pudo copiar';
+        later(() => { els.btnShare.textContent = 'Copiar resultado'; }, 1600);
+      }
+
+      /* ================================================================
+         11. EVENTOS E INICIO
+         ================================================================ */
+      function updateSoundButton() {
+        const muted = Sound.muted;
+        els.btnSound.textContent = muted ? '🔇' : '🔊';
+        els.btnSound.setAttribute('aria-pressed', String(muted));
+        els.btnSound.setAttribute('aria-label', muted ? 'Activar el sonido' : 'Silenciar el sonido');
+      }
+
+      function bindEvents() {
+        els.btnStart.addEventListener('click', startGame);
+        els.btnAgain.addEventListener('click', startGame);
+        els.btnHome.addEventListener('click', () => showScreen('start'));
+        els.btnQuit.addEventListener('click', abortGame);
+        els.btnShare.addEventListener('click', copyResult);
+        els.btnSound.addEventListener('click', () => {
+          Sound.toggle();
+          updateSoundButton();
+          if (!Sound.muted) { Sound.unlock(); Sound.click(); }
+        });
+
+        /* Teclado: 1-4 responde, Escape abandona, Enter o Espacio empieza una partida */
+        document.addEventListener('keydown', (e) => {
+          if (e.repeat) return;
+          if (state.screen === 'game') {
+            if (/^[1-4]$/.test(e.key)) {
+              const btn = els.answers.children[Number(e.key) - 1];
+              if (btn) { e.preventDefault(); btn.click(); }
+            } else if (e.key === 'Escape') {
+              abortGame();
+            }
+          } else if ((e.key === 'Enter' || e.key === ' ') && !(document.activeElement instanceof HTMLButtonElement)) {
+            e.preventDefault();
+            startGame();
+          }
+        });
+      }
+
+      function init() {
+        [
+          'symbols', 'flash', 'btnQuit', 'brand', 'btnSound', 'calcScreen', 'calcKeys', 'btnStart', 'bestToday',
+          'qIndex', 'qTotal', 'penaltyCount', 'progress', 'timerBox', 'timer', 'penaltyLayer', 'frame', 'equation',
+          'feedback', 'answers', 'countdown', 'countdownText', 'ratingTitle', 'ratingText', 'stars', 'finalTime',
+          'finalDetail', 'recordMsg', 'bestResult', 'summary', 'btnAgain', 'btnShare', 'btnHome',
+        ].forEach((id) => { els[id] = document.getElementById(id); });
+
+        buildCalculator();
+        buildSymbols();
+        bindEvents();
+        updateSoundButton();
+        updateBestToday();
+        showScreen('start');
+      }
+
+      init();
+    })();
+  </script>
+</body>
+</html>
