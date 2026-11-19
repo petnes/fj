@@ -22,5 +22,5 @@ Cosas que Diego debe hacer sí o sí:
 1. Leer los hilos antes de publicar (la línea 1 ya tenía 21 respuestas, la 2 trece, la 3 diez y la 4 seis el día de las capturas) y adaptar la primera frase de cada réplica al compañero y a la idea concreta que rebate o apoya; los huecos están entre corchetes.
 2. Guardar captura de pantalla de cada aportación (y del mensaje anterior cuando responde a alguien) para el primer documento de entrega, con su nombre y apellidos.
 3. Rellenar en la reflexión el nombre del máster y la coevaluación (nombre del compañero y 50-80 palabras).
-4. Los vídeos del aula están citados por título y enlace; falta completar canal y año en APA. El artículo de Arcalean (2023) está citado con páginas del PDF de Esade (pp. 33-38).
+4. Los vídeos del aula están citados con título, canal y enlace (sin fecha: YouTube no la facilita sin iniciar sesión). El artículo de Arcalean (2023) está citado con páginas del PDF de Esade (pp. 33-38).
 5. Verificar las cifras más recientes antes de publicarlas (precio del CO2, aranceles, fechas de aplicación del ajuste en frontera y de la directiva de afirmaciones ambientales): proceden de fuentes de 2024-2025 y el debate es de finales de 2026.
