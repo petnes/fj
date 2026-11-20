@@ -1,0 +1,36 @@
+[
+ {
+  "id": "Silberman_2026",
+  "bloque": "2.6",
+  "referencia_apa7": "Silberman, A., de Mooij, B., Fekkes, M. y Overbeek, G. (2026). Which components boost social-emotional learning intervention effects in preschool children? A multilevel meta-analysis. *Early Education and Development, 37*(7), 1728-1767. https://doi.org/10.1080/10409289.2026.2688468",
+  "tipo": "revisión sistemática / metaanálisis",
+  "acceso": "solo resumen (Taylor & Francis bloqueado desde este entorno; según Semantic Scholar es de acceso abierto con licencia CC BY, así que puede descargarse desde la web de la revista)",
+  "enlace": "https://doi.org/10.1080/10409289.2026.2688468",
+  "pdf_local": "",
+  "objetivo": "Averiguar qué componentes concretos de los programas de aprendizaje socioemocional en Educación Infantil se asocian con mayores efectos.",
+  "participantes_contexto": "87 estudios con 20.293 niños y niñas de 3 a 5 años de población no clínica, que evaluaron 70 intervenciones y aportaron 617 tamaños del efecto.",
+  "metodo": "Metaanálisis multinivel. Las estrategias de cada programa se codificaron en componentes (psicoeducación, ejercicios interpersonales y ejercicios cognitivos) y subcomponentes, y se analizó su relación con los efectos.",
+  "resultados_utiles": "Tras los programas se observaron mejoras grandes en habilidades interpersonales (d = 0,63) y emocionales (d = 0,64) y pequeñas en problemas internalizantes (d = 0,15). Ningún componente superó a los demás. Incluir ejercicios de reconocimiento de emociones que exigen capacidades socioemocionales avanzadas o razonamiento avanzado de teoría de la mente se asoció con efectos más débiles en los resultados más próximos.",
+  "limitaciones": "Solo se ha leído el resumen, por lo que no se puede comprobar la procedencia de los estudios, su calidad ni si alguno trabajó la diversidad cultural o lingüística o incluyó a las familias.",
+  "cita_textual": "",
+  "uso_en_el_trabajo": "2.6: es la síntesis más reciente sobre Infantil. Apoya que el programa combine actividades variadas sin depender de una sola técnica y que los ejercicios de reconocer emociones ajenas se planteen con situaciones sencillas y apoyos visuales, sin exigir razonamientos sobre estados mentales que a los 5 años todavía se están construyendo.",
+  "verificacion": "Metadatos verificados en Crossref (vol. 37, núm. 7, pp. 1728-1767) y resumen leído en Semantic Scholar."
+ },
+ {
+  "id": "Ministerio_2026_ThinkEqual",
+  "bloque": "2.6",
+  "referencia_apa7": "Ministerio de Educación, Formación Profesional y Deportes. (2026, 4 de febrero). *Programa internacional Think Equal en centros educativos de Ceuta y Melilla*. Subdirección General de Centros y Programas. https://www.educacionfpydeportes.gob.es/mc/sgcp/actualidad/noticias/2026-febrero/think-equal.html",
+  "tipo": "informe institucional",
+  "acceso": "texto completo leído (nota oficial del Ministerio)",
+  "enlace": "https://www.educacionfpydeportes.gob.es/mc/sgcp/actualidad/noticias/2026-febrero/think-equal.html",
+  "pdf_local": "",
+  "objetivo": "Informar de la implantación del programa internacional Think Equal en centros de Educación Infantil de Ceuta y Melilla.",
+  "participantes_contexto": "Alumnado de Educación Infantil de 13 centros educativos de Ceuta y Melilla, curso 2025-2026, en colaboración con la Fundación Gomaespuma.",
+  "metodo": "Programa que integra 25 competencias socioemocionales en el currículo mediante cuentos pedagógicos adaptados a cada edad (empatía, respeto, diversidad y resolución pacífica de conflictos), con formación específica del profesorado, materiales didácticos y recursos de acompañamiento. Según la nota, se aplica en 40 países.",
+  "resultados_utiles": "La nota no aporta resultados de evaluación. Muestra que la administración educativa considera prioritaria en Ceuta y Melilla la educación emocional, la igualdad y la convivencia desde Infantil.",
+  "limitaciones": "Es una nota institucional, no una evaluación: no hay datos de eficacia publicados para estos centros. No consta que incluya un trabajo específico con las familias ni con las lenguas del hogar.",
+  "cita_textual": "«La iniciativa tiene como objetivo promover la educación emocional, la igualdad y la convivencia positiva desde las primeras etapas educativas.»",
+  "uso_en_el_trabajo": "2.6, antecedentes en Melilla: único programa socioemocional de Infantil que consta implantado en la ciudad. El programa del grupo se diferencia por el trabajo con las familias y por el tratamiento de las lenguas familiares; conviene comprobar si el centro de referencia participa en Think Equal para coordinarse y no duplicar.",
+  "verificacion": "Nota consultada en la web del Ministerio (fecha 04/02/2026). Una nota de prensa posterior (18/03/2026) menciona los 13 centros sin precisar que todos sean de Infantil."
+ }
+]

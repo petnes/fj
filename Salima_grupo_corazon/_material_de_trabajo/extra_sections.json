@@ -1,0 +1,324 @@
+{
+ "intro": [
+  {
+   "h": "Para qué sirve este documento",
+   "p": [
+    "Este banco reúne las fuentes que sostienen el apartado 2 del trabajo (marco teórico y antecedentes). Cada fuente tiene una ficha con el formato que propone la guía del grupo y, cuando el artículo es de acceso abierto, su PDF está en la carpeta «articulos», ordenado por subapartado. Sirve para redactar, para comprobar una cita antes de entregar y para que el resto del grupo pueda reutilizar fuentes en sus apartados, por ejemplo en la metodología o en la evaluación."
+   ]
+  },
+  {
+   "h": "Cómo se ha hecho la búsqueda",
+   "p": [
+    "La búsqueda se hizo en noviembre de 2026 siguiendo los seis bloques de la guía. Se consultaron ERIC, PubMed y Europe PMC, Crossref, Semantic Scholar y el buscador académico SciSpace. También se revisaron las webs de revistas españolas (*Revista de Educación*, *Educación XX1*, *Revista Complutense de Educación*, *REIS* o *Revista de Psicodidáctica*, entre otras) y repositorios universitarios como Digibug (UGR), y la normativa se consultó directamente en el BOE.",
+    "Se combinaron términos en castellano y en inglés: «educación intercultural» AND «educación infantil», «competencia emocional» AND preescolar, «socialización emocional», «participación familiar» AND inmigración, *emotion socialization* AND *culture*, *social-emotional learning* AND *preschool* AND *meta-analysis* o *family-school partnership* AND *immigrant*, con búsquedas específicas sobre Melilla (convivencia escolar, amazige o tamazight, bilingüismo).",
+    "Se dio prioridad a artículos revisados por pares, metaanálisis y revisiones sistemáticas, a estudios con niños de tres a seis años, a investigaciones hechas en España y a lo publicado sobre Melilla. Se mantuvieron algunos clásicos anteriores a 2010 cuando siguen siendo referencia. Los datos de cada referencia (autoría, año, revista, volumen, páginas y DOI) se comprobaron en Crossref, en la web de la revista o en el BOE, y en varias fichas se anotan correcciones respecto a cómo circulan esas referencias."
+   ]
+  },
+  {
+   "h": "Qué se ha leído y qué no",
+   "p": [
+    "El banco tiene 89 fichas. En 58 se ha leído el texto completo y las citas textuales están copiadas del original con su página; en 31 solo se pudo leer el resumen, porque el artículo es de pago o la web de la editorial no permitía la descarga. Las fichas de resumen lo indican en el campo «Acceso» y no se han usado para datos que no aparezcan en el resumen. De todas ellas, 71 se citan en la versión 2 del apartado y las demás quedan como reserva.",
+    "Conviene tener en cuenta dos limitaciones. Dialnet y Google Scholar no se pudieron consultar, así que merece la pena hacer una búsqueda rápida en Dialnet con los mismos términos por si falta algún estudio español reciente, sobre todo de Melilla. Y antes de la entrega final sería bueno descargar desde la biblioteca de la UGR las 13 fuentes citadas que solo se han leído en resumen (están en la penúltima tabla). Algunas son fáciles de conseguir: el metaanálisis de Silberman et al. (2026) es de acceso abierto en la web de la revista y la revisión de Aboud et al. (2012), que ha quedado en reserva, también lo es en ScienceDirect."
+   ]
+  },
+  {
+   "h": "Cómo está organizado",
+   "p": [
+    "Primero aparece una tabla resumen por subapartado con la fuente, el tipo de trabajo, el acceso, si se cita en la versión 2 del apartado y para qué sirve. Después vienen las fichas completas en el mismo orden. Al final se recogen los artículos de la normativa con su texto literal, las fuentes citadas que conviene leer completas y las que han quedado en reserva. Algunas notas de las fichas («Uso en el trabajo», «Verificación») se escribieron al revisar la primera versión del apartado; la versión 2 ya incorpora esas correcciones."
+   ]
+  }
+ ],
+ "final": [
+  {
+   "h": "Normativa consultada (texto literal)",
+   "p": [
+    "Todos los textos se han copiado del BOE (texto consolidado de la Ley Orgánica 2/2006 tras la Ley Orgánica 3/2020, Real Decreto 95/2022 y Orden EFP/608/2022). La última columna indica dónde se usa en el apartado 2 o si queda en reserva para otros apartados del trabajo."
+   ],
+   "tablas": [
+    {
+     "cols": [
+      "Norma y artículo",
+      "Texto literal",
+      "Dónde se usa"
+     ],
+     "rows": [
+      [
+       "Ley Orgánica 2/2006 (texto consolidado), art. 1, letras a bis y b",
+       "«a bis) La calidad de la educación para todo el alumnado, sin que exista discriminación alguna por razón de nacimiento, sexo, origen racial, étnico o geográfico, discapacidad, edad, enfermedad, religión o creencias, orientación sexual o identidad sexual o cualquier otra condición o circunstancia personal o social. b) La equidad, que garantice la igualdad de oportunidades para el pleno desarrollo de la personalidad a través de la educación, la inclusión educativa, la igualdad de derechos y oportunidades [...]»",
+       "2.1"
+      ],
+      [
+       "LOE, art. 2.1.g",
+       "«La formación en el respeto y reconocimiento de la pluralidad lingüística y cultural de España y de la interculturalidad como un elemento enriquecedor de la sociedad.»",
+       "2.1"
+      ],
+      [
+       "LOE, art. 12.4",
+       "«Con objeto de respetar la responsabilidad fundamental de las madres y padres o tutores legales en esta etapa, los centros de educación infantil cooperarán estrechamente con ellos.»",
+       "2.5 y cierre"
+      ],
+      [
+       "LOE, art. 12.5",
+       "«La programación, la gestión y el desarrollo de la educación infantil atenderán, en todo caso, a la compensación de los efectos que las desigualdades de origen cultural, social y económico tienen en el aprendizaje y evolución infantil [...]»",
+       "Reserva (introducción o justificación)"
+      ],
+      [
+       "LOE, art. 13, letras a, d y e",
+       "«a) Conocer su propio cuerpo y el de los otros, sus posibilidades de acción y aprender a respetar las diferencias. [...] d) Desarrollar sus capacidades afectivas. e) Relacionarse con los demás en igualdad y adquirir progresivamente pautas elementales de convivencia y relación social, así como ejercitarse en el uso de la empatía y la resolución pacífica de conflictos, evitando cualquier tipo de violencia.»",
+       "Reserva (objetivos del programa)"
+      ],
+      [
+       "Real Decreto 95/2022, art. 7, letras d y e",
+       "«d) Desarrollar sus capacidades emocionales y afectivas. e) Relacionarse con los demás en igualdad y adquirir progresivamente pautas elementales de convivencia y relación social, así como ejercitarse en el uso de la empatía y la resolución pacífica de conflictos, evitando cualquier tipo de violencia.»",
+       "Reserva (objetivos del programa)"
+      ],
+      [
+       "RD 95/2022, anexo I (competencia plurilingüe)",
+       "«En esta etapa, se inicia el contacto con lenguas y culturas distintas de la familiar, fomentando en niños y niñas las actitudes de respeto y aprecio por la diversidad lingüística y cultural, así como el interés por el enriquecimiento de su repertorio lingüístico. Se promueven de este modo el diálogo y la convivencia democrática.»",
+       "2.1"
+      ],
+      [
+       "RD 95/2022, anexo II (introducción a las áreas)",
+       "«Un aula inclusiva da cabida a diferentes posibilidades y limitaciones, a distintos modos de lenguaje y comunicación, a diversas formas de movilidad y a múltiples maneras de acercarse y comprender el entorno.»",
+       "2.1"
+      ],
+      [
+       "RD 95/2022, anexo II, Crecimiento en Armonía, competencia específica 2",
+       "«Reconocer, manifestar y regular progresivamente sus emociones, expresando necesidades y sentimientos para lograr bienestar emocional y seguridad afectiva.»",
+       "2.2"
+      ],
+      [
+       "RD 95/2022, anexo II, Crecimiento en Armonía, criterio de evaluación 2.2",
+       "«Relacionarse con las otras personas aceptando y mostrando afecto de manera libre, segura, respetuosa y alejada de todo tipo de estereotipos.»",
+       "2.1"
+      ],
+      [
+       "Orden EFP/608/2022, art. 14.1",
+       "«Cada grupo de niños y niñas tendrá un tutor o tutora, que será su persona de referencia y asumirá la responsabilidad tanto de la relación con las familias o tutores o tutoras legales, como de la coordinación con el resto de profesionales que intervengan en su grupo.»",
+       "Reserva (metodología: papel de la tutora)"
+      ],
+      [
+       "Orden EFP/608/2022, art. 16.1",
+       "«Cuando el niño o la niña se incorpore al centro, el tutor o tutora realizará una evaluación inicial cuyos resultados recogerá en un informe. Asimismo, añadirá en dicho documento la información aportada por las familias o tutores o tutoras legales [...]»",
+       "Reserva (diagnóstico de septiembre)"
+      ],
+      [
+       "Orden EFP/608/2022, art. 19.2",
+       "«Los centros cooperarán estrechamente con los padres, madres, tutores o tutoras legales, generando cauces de participación y colaboración, y harán explícitas las actuaciones previstas para favorecer su participación en el proceso educativo de los niños y niñas.»",
+       "2.5 y cierre"
+      ],
+      [
+       "Orden EFP/608/2022, anexo IV (Atención a las diferencias individuales)",
+       "«Es importante, por tanto, evitar atribuir etiquetas y calificativos a la conducta, rasgos de personalidad o capacidades personales [...]. Cada niño o niña llega a la escuela cargado de experiencias, costumbres y tradiciones que enriquecen el aula. El equipo educativo debe aprovechar la oportunidad que ofrece esta pluralidad cultural para trabajar los valores de la convivencia democrática. Esta diversidad implica a su vez una atención respetuosa y personalizada de los distintos perfiles lingüísticos, así como cualquier otra práctica que favorezca la comprensión y el respeto intercultural.»",
+       "2.1"
+      ]
+     ],
+     "widths": [
+      3.6,
+      10.2,
+      3.2
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Fuentes citadas que conviene leer completas antes de entregar",
+   "p": [
+    "Son las fuentes de la versión 2 que solo se han podido leer en resumen. Lo que se dice de ellas en el texto no va más allá del resumen, pero conviene tenerlas a mano por si el profesorado pregunta por algún detalle."
+   ],
+   "tablas": [
+    {
+     "cols": [
+      "Fuente",
+      "Se cita en",
+      "Cómo conseguirla"
+     ],
+     "rows": [
+      [
+       "Denham et al. (2003)",
+       "2.2",
+       "Biblioteca de la UGR (con el usuario de la universidad): https://doi.org/10.1111/1467-8624.00533"
+      ],
+      [
+       "Denham et al. (2012)",
+       "2.3",
+       "Biblioteca de la UGR (con el usuario de la universidad): https://doi.org/10.1007/s10643-012-0504-2"
+      ],
+      [
+       "Domitrovich et al. (2007)",
+       "2.6",
+       "Biblioteca de la UGR (con el usuario de la universidad): https://doi.org/10.1007/s10935-007-0081-0"
+      ],
+      [
+       "Durlak et al. (2011)",
+       "2.6, Cierre",
+       "Biblioteca de la UGR (con el usuario de la universidad): https://doi.org/10.1111/j.1467-8624.2010.01564.x"
+      ],
+      [
+       "Giménez-Dasí et al. (2017)",
+       "2.6",
+       "Biblioteca de la UGR (con el usuario de la universidad): https://doi.org/10.1097/IYC.0000000000000086"
+      ],
+      [
+       "Havighurst et al. (2010)",
+       "2.6, Cierre",
+       "Biblioteca de la UGR (con el usuario de la universidad): https://doi.org/10.1111/j.1469-7610.2010.02303.x"
+      ],
+      [
+       "Izard et al. (2001)",
+       "2.2",
+       "Biblioteca de la UGR (con el usuario de la universidad): https://doi.org/10.1111/1467-9280.00304"
+      ],
+      [
+       "Izard et al. (2008)",
+       "2.6",
+       "Biblioteca de la UGR (con el usuario de la universidad): https://doi.org/10.1017/S0954579408000175"
+      ],
+      [
+       "Pons et al. (2004)",
+       "2.2, Cierre",
+       "Biblioteca de la UGR (con el usuario de la universidad): https://doi.org/10.1080/17405620344000022"
+      ],
+      [
+       "Raval y Walker (2019)",
+       "2.4",
+       "Biblioteca de la UGR (con el usuario de la universidad): https://doi.org/10.1016/j.dr.2018.11.001"
+      ],
+      [
+       "San Pío et al. (2023)",
+       "2.6",
+       "Biblioteca de la UGR (con el usuario de la universidad): https://doi.org/10.1016/j.puhe.2023.01.011"
+      ],
+      [
+       "Sheridan et al. (2019)",
+       "2.5, Cierre",
+       "Biblioteca de la UGR (con el usuario de la universidad): https://doi.org/10.3102/0034654318825437"
+      ],
+      [
+       "Silberman et al. (2026)",
+       "2.6, Cierre",
+       "Acceso abierto en la web de la revista: https://doi.org/10.1080/10409289.2026.2688468"
+      ]
+     ],
+     "widths": [
+      4.4,
+      2.2,
+      10.4
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Fuentes en reserva (no citadas en la versión 2)",
+   "p": [
+    "Se leyeron o localizaron durante la búsqueda, pero no se citan en el texto actual, bien porque solo se pudo leer el resumen, bien porque otra fuente cubría la misma idea. Pueden servir al grupo para otros apartados."
+   ],
+   "tablas": [
+    {
+     "cols": [
+      "Fuente",
+      "Acceso",
+      "Posible uso"
+     ],
+     "rows": [
+      [
+       "Aboud et al. (2012)",
+       "Solo resumen",
+       "2.1, prevención de prejuicios: sirve para matizar expectativas (las intervenciones tempranas mejoran más las actitudes que las relaciones reales) y para justificar que el programa combine cuentos e instrucción con convivencia cooperativa diaria y una evaluación prudente."
+      ],
+      [
+       "Arroyo González (2000)",
+       "Solo resumen",
+       "2.1, contexto de Melilla: antecedente de la preocupación por un currículum intercultural en la ciudad;"
+      ],
+      [
+       "Cortina-Pérez et al. (2018)",
+       "Solo resumen",
+       "Subapartado 2.4, uso secundario: dato de contexto de que el bilingüismo español-tamazight está extendido entre el alumnado universitario melillense, incluidos futuros docentes."
+      ],
+      [
+       "De Houwer (2017)",
+       "Solo resumen",
+       "Subapartados 2.4 y 2.5: argumento para no pedir a las familias que dejen su lengua en casa y para que los talleres familiares y la maleta viajera presenten la lengua del hogar como un recurso para el bienestar emocional de la familia."
+      ],
+      [
+       "Dunn et al. (1991)",
+       "Solo resumen",
+       "2.3: antecedente clásico de que la conversación familiar sobre sentimientos se relaciona con la comprensión emocional posterior;"
+      ],
+      [
+       "Epstein (2011)",
+       "Solo resumen",
+       "2.5, primer párrafo: referencia clásica del marco de seis tipos de implicación, útil para situar las piezas del programa (talleres y comunicación bidireccional, maleta viajera como aprendizaje en casa, encuentro final abierto a la comunidad)."
+      ],
+      [
+       "Giménez-Dasí et al. (2015)",
+       "Solo resumen",
+       "2.2 (y antecedentes): muestra que en aulas españolas un programa breve y continuado puede mejorar la comprensión emocional y la competencia social desde edades tempranas, lo que apoya el formato de dos sesiones semanales durante un trimestre."
+      ],
+      [
+       "González-Gijón y Ruiz-Garzón (2014)",
+       "Solo resumen",
+       "2.1, contexto de Melilla: trabajo de una de las profesoras del máster sobre cómo la Ciudad Autónoma promueve la diversidad cultural;"
+      ],
+      [
+       "Halberstadt y Lozada (2011)",
+       "Solo resumen",
+       "Subapartado 2.4, solo como apoyo general a la idea de que la socialización emocional está inserta en creencias y prácticas culturales."
+      ],
+      [
+       "Hornby y Lafaele (2011)",
+       "Solo resumen",
+       "2.5, marco de barreras: permite ordenar las barreras halladas en España (idioma, horarios, desconocimiento del sistema, distancia con el profesorado) y mostrar que el programa responde en varios niveles: invitaciones explícitas, horarios y formatos flexibles, lenguaje no técnico y trato no evaluativo."
+      ],
+      [
+       "Keller y Otto (2009)",
+       "Solo resumen",
+       "Subapartado 2.4, como referencia teórica sobre metas de socialización (autonomía y relación) que dan sentido a distintas maneras de calmar y de expresar, con la advertencia de que son prototipos y no etiquetas para las familias del aula."
+      ],
+      [
+       "Murano et al. (2020)",
+       "Solo resumen",
+       "Indica la magnitud esperable de un programa universal en Infantil (efectos pequeños a medianos) y respalda un diseño para todo el grupo de 5 años con apoyo reforzado a quien más lo necesite, sin trasladar sin más prácticas pensadas para alumnado mayor."
+      ],
+      [
+       "Salas Román et al. (2022)",
+       "Solo resumen",
+       "Refuerza, como antecedente español con niños de 5 años, la utilidad de una programación de educación emocional con una actividad semanal a lo largo del curso;"
+      ],
+      [
+       "Serrano-Ortiz et al. (2026)",
+       "Solo resumen",
+       "Antecedente español muy reciente con la edad del programa: apoya una secuencia lúdica (juego, dramatización, vídeo) y evaluar el reconocimiento y la comprensión emocional con tareas directas;"
+      ],
+      [
+       "Smith et al. (2020)",
+       "Solo resumen",
+       "2.5: refuerza, con un segundo metaanálisis, que la comunicación bidireccional y la implicación en casa son componentes eficaces;"
+      ],
+      [
+       "Thompson (1994)",
+       "Solo resumen",
+       "2.2: apoya definir la regulación emocional en el programa como un proceso que a los 5 años incluye la ayuda externa del adulto (corregulación) y que depende de las metas y de la situación, lo que justifica el rincón de la calma como espacio acompañado y evita valorar una única forma correcta de expresar."
+      ],
+      [
+       "Turney y Kao (2009)",
+       "Solo resumen",
+       "2.5, barreras de familias inmigrantes: evidencia internacional de que la menor implicación escolar se asocia a barreras (lengua, tiempo de residencia) y no a falta de interés, lo que apoya que el programa reduzca barreras en lugar de exigir más presencia."
+      ],
+      [
+       "Yow y Markman (2011)",
+       "Solo resumen",
+       "Subapartado 2.4 (bilingüismo y comunicación no verbal), con cautela: apoya que actividades como «Mi cuerpo también habla» trabajen el tono de voz, el gesto y la entonación como vías de comprensión emocional que no dependen solo del vocabulario en castellano."
+      ]
+     ],
+     "widths": [
+      4.4,
+      2.2,
+      10.4
+     ]
+    }
+   ]
+  }
+ ]
+}
