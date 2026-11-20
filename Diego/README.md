@@ -4,7 +4,7 @@
 
 - `M2815_PEC2_Velez_Astudillo.docx`: plantilla oficial rellenada con las actividades individuales (ejercicio 1 paso 1, actividades 2.1 y 2.2 y ejercicio 3 completo) y bibliografía en el formato que pide el enunciado. Arial 11. Ocupa exactamente 8 páginas en LibreOffice (límite del enunciado); conviene abrirlo en Word y comprobar que sigue en 8 antes de entregar. Entrega: 9 de diciembre, 23:59.
 - `M2815_PEC2_Velez_Astudillo_vista_previa.pdf`: vista previa para revisar sin abrir Word.
-- `foro_ejercicio1_mensaje.txt`: mensaje corto para publicar en el espacio del grupo 8 (foro «Reto 2 – Ejercicio 1. Trabajo en equipo») antes del 24 de noviembre. Es una versión resumida del ejercicio 1 con saludo y cierre.
+- `foro_ejercicio1_mensaje_COMPLETO.txt`: respuesta completa del ejercicio 1 para publicar en el espacio del grupo 8 (foro «Reto 2 – Ejercicio 1. Trabajo en equipo») antes del 24 de noviembre. Es el mismo texto del ejercicio 1 del PDF, con saludo, cierre y referencias.
 - `fichas_competencias_grupo8_BORRADOR.docx`: borrador de las cinco fichas (nombre, descripción, indicadores) para la parte grupal (entrega en PDF el 9 de diciembre, máximo 4 páginas, con los nombres del equipo). Es una propuesta para consensuar; las fichas definitivas salen del debate del grupo.
 
 Cosas que Diego debe revisar o personalizar:
