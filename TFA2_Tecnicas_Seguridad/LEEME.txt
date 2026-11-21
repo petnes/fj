@@ -2,8 +2,9 @@ TFA 2. TÉCNICAS DE SEGURIDAD EN EL TRABAJO (curso 2026/27)
 Tema: medidas de protección contra incendios en un taller de reparación de vehículos (grupo L-O).
 
 entrega/
-  Moncada_Roa_Milagros_TFA_TST.pdf                 Trabajo escrito (21 páginas: portada, índice, 17 de cuerpo y bibliografía).
-  Moncada_Roa_Milagros_TFA_TST_presentacion.pptx   9 diapositivas; el comentario de cada una está en las notas del orador.
+  Moncada_Roa_Milagros_TFA_TST.pdf                 ÚNICO archivo que hay que subir a Ágora (27 páginas): trabajo, bibliografía
+                                                   y anexo con las 9 diapositivas comentadas y el enlace al vídeo (página 22).
+  Moncada_Roa_Milagros_TFA_TST_presentacion.pptx   Presentación original con el guion en las notas (por si se pide aparte).
 
 apoyo/
   Moncada_Roa_Milagros_TFA_TST.docx                Mismo trabajo en Word, por si hay que retocar algo (por ejemplo añadir la fecha en la portada).
@@ -14,4 +15,4 @@ apoyo/
 materiales/
   Enunciado, normas de entrega y temas 4 y 8 de la asignatura.
 
-Pendiente: la fecha límite de entrega del curso virtual (la portada no lleva fecha).
+La portada no lleva fecha de entrega. El vídeo grabado por Milagros está en su Google Drive (enlace en el anexo del PDF); no se guarda en este repositorio.

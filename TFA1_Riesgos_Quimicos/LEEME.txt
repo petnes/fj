@@ -1,0 +1,16 @@
+TFA 1. FUNDAMENTOS Y TÉCNICAS DE PRL: RIESGOS QUÍMICOS (curso 2026/27)
+Tema: evaluación de la exposición laboral a cadmio en soldadura y corte de estructuras metálicas.
+
+entrega/
+  Moncada_Roa_Milagros_TFA_FTPRQ.pdf               ÚNICO archivo que hay que subir a Ágora (33 páginas): trabajo, bibliografía
+                                                   y anexo con las 9 diapositivas comentadas y el enlace al vídeo (página 28).
+  Moncada_Roa_Milagros_TFA_FTPRQ_presentacion.pptx Presentación original con el guion en las notas (por si se pide aparte).
+
+apoyo/
+  Moncada_Roa_Milagros_TFA_FTPRQ.docx              Mismo trabajo en Word, por si hay que retocar algo.
+  Moncada_Roa_Milagros_TFA_FTPRQ_guion_video.*     Guion para teleprónter del vídeo.
+
+materiales/
+  Enunciado, normas de entrega y temas 6 y 8 de la asignatura.
+
+El vídeo grabado por Milagros está en su Google Drive (enlace en el anexo del PDF); no se guarda en este repositorio.
