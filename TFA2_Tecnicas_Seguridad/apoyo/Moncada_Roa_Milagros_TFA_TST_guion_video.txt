@@ -1,0 +1,47 @@
+GUION PARA EL VÍDEO DE LA PRESENTACIÓN
+
+DIAPOSITIVA 1. PORTADA (unos 20 segundos)
+
+Hola. Soy Milagros Moncada Roa y este es mi trabajo final de Técnicas de Seguridad en el Trabajo. Me tocaba, por apellido, un taller de reparación de vehículos, y lo que he hecho es diseñar sus medidas de protección contra incendios: describir el local, calcular su nivel de riesgo, ver qué le exige el reglamento y proponer las medidas.
+
+
+DIAPOSITIVA 2. OBJETIVOS Y MARCO NORMATIVO (unos 40 segundos)
+
+Los objetivos son cuatro: describir el taller con sus focos de ignición y sus combustibles, calcular la carga de fuego y el nivel de riesgo intrínseco, comparar las exigencias con la situación real y proponer las medidas con responsables y plazos. La norma central es el Reglamento de seguridad contra incendios en los establecimientos industriales, porque su artículo 2 incluye expresamente a los talleres de reparación. A su lado están el RIPCI para las instalaciones, el artículo 20 de la Ley de Prevención para la emergencia, los reales decretos de lugares de trabajo y de señalización, y el reglamento de baja tensión para el foso. Y como base conceptual, los temas 4 y 8 de la asignatura.
+
+
+DIAPOSITIVA 3. DESCRIPCIÓN DEL LOCAL (unos 45 segundos)
+
+El taller es una nave aislada de planta baja, de treinta por veinte metros, seiscientos metros cuadrados, con estructura metálica. Está separada más de diez metros de las parcelas vecinas, así que es una configuración de tipo C. Trabajan nueve personas y en la recepción puede haber hasta tres clientes. Se hace mecánica, electricidad, neumáticos y pequeña soldadura, sin pintura. La zona de reparación ocupa trescientos sesenta metros con dos elevadores y un foso, y hay tres almacenes pequeños: recambios, neumáticos y aceites. En el plano se ve lo que más me preocupa: el rincón de los aceites y los disolventes está pegado al banco de soldadura.
+
+
+DIAPOSITIVA 4. FOCOS DE IGNICIÓN Y MEDIOS EXISTENTES (unos 45 segundos)
+
+Siguiendo el tema 8, he clasificado los focos de ignición. Térmicos: la soldadura, la amoladora y los escapes calientes. Eléctricos: alargadores, bases múltiples y cargadores. Químicos: el hidrógeno de las baterías en carga, las baterías de los vehículos eléctricos y los trapos impregnados. Y mecánicos: las chispas. En cuanto a los medios, el taller tiene tres extintores de seis kilos, uno con la revisión caducada y el más lejano a veintidós metros del puesto. No hay alarma, ni detección, ni alumbrado de emergencia. La única puerta peatonal útil abre hacia dentro y la puerta de atrás está bloqueada por neumáticos. Y no hay plan de emergencia ni formación.
+
+
+DIAPOSITIVA 5. CARGA DE FUEGO Y NIVEL DE RIESGO (unos 50 segundos)
+
+Para la zona de reparación y la oficina he usado los valores por actividad de la tabla 1.2 del reglamento; para los almacenes de recambios y neumáticos, los valores por metro cúbico de almacenamiento; y para los aceites, que es un inventario conocido, el cálculo por masas con el poder calorífico de la tabla 1.4. En total, trescientos veinte mil quinientos treinta megajulios. El coeficiente de activación es el de la actividad de mayor riesgo que ocupe al menos el diez por ciento del sector: los almacenes suman el once y medio, y los de aceites y neumáticos tienen un Ra de dos. Dividiendo entre seiscientos metros y multiplicando por dos, salen mil sesenta y ocho megajulios por metro cuadrado: riesgo medio, nivel tres. Lo interesante es que, sin ese factor, la nave sería de riesgo bajo. Son sesenta y nueve metros de almacén los que suben la categoría de toda la nave.
+
+
+DIAPOSITIVA 6. EXIGENCIAS FRENTE A SITUACIÓN ACTUAL (unos 45 segundos)
+
+Con tipo C, riesgo medio y seiscientos metros, el sector cabe de sobra en el límite de cinco mil, y la estructura no necesita justificar resistencia al fuego por ser una nave de una planta separada de los límites, aunque hay que señalizarlo en el acceso. En evacuación, con una sola salida el recorrido máximo son veinticinco metros, y aquí hay treinta y dos. El sistema manual de alarma es obligatorio, porque no se exige detección automática, y no existe. Los extintores incumplen en dotación, distribución y mantenimiento. El alumbrado de emergencia es exigible con diez ocupantes en riesgo medio y tampoco existe. Las BIE, los hidrantes y los rociadores no son exigibles por superficie. En resumen, cinco incumplimientos reglamentarios y ninguna organización de la emergencia.
+
+
+DIAPOSITIVA 7. PREVENCIÓN Y PROTECCIÓN PASIVA (unos 50 segundos)
+
+Las medidas siguen el orden del tetraedro. Primero el combustible: el aceite usado sale a un contenedor exterior con cubeto, los disolventes van a un armario de seguridad, y el almacén baja de mil cuatrocientos a cuatrocientos treinta litros. Trapos en contenedor metálico con tapa, cartón fuera del cuarto técnico, neumáticos lejos de las puertas y ningún trasvase de combustible dentro. Después la energía de activación: un puesto fijo de soldadura lejos de los inflamables, permiso de trabajos en caliente, revisión eléctrica, foso con equipos aptos para atmósferas explosivas y ventilación, y un protocolo para vehículos eléctricos. Y la protección pasiva: el almacén de aceites se convierte en un sector con cerramiento EI 60 y puerta EI2 30. Con eso, el sector principal pasa a riesgo bajo nivel dos y el riesgo medio queda encerrado en quince metros cuadrados.
+
+
+DIAPOSITIVA 8. PROTECCIÓN ACTIVA, EVACUACIÓN Y PLAN DE EMERGENCIA (unos 55 segundos)
+
+Sobre esa base se dimensiona la protección activa. Ocho extintores portátiles, de polvo ABC y uno de CO2 junto al cuadro, más un extintor móvil de cincuenta kilos en el almacén, porque supera los doscientos litros de líquidos. Lo que manda en el número es que desde cualquier punto haya un extintor a menos de quince metros, rodeando los obstáculos. Tres pulsadores con sirena, y detectores de humo voluntarios en el almacén, el cuarto técnico y la oficina. Alumbrado de emergencia en las vías, las salidas y junto a los equipos. Dos salidas alternativas de noventa centímetros que abren hacia fuera, con recorridos de veintisiete metros como máximo, y señalización fotoluminiscente con planos de evacuación. El plan de emergencia reparte funciones entre las nueve personas, con cuatro consignas sencillas, formación práctica con extintores y un simulacro al año. Y todo con mantenimiento contratado según el RIPCI.
+
+
+DIAPOSITIVA 9. CONCLUSIONES (unos 35 segundos)
+
+Para terminar. El taller es hoy un único sector de riesgo medio con varios incumplimientos, y la causa está en sesenta y nueve metros de almacén mal colocados. Las medidas de mayor efecto son las más baratas: mover un depósito, cerrar un armario y ordenar. Después, compartimentar el almacén y completar extintores, alarma, alumbrado, salidas y señalización. Y lo que convierte todo eso en seguridad real es el plan de emergencia, la formación y el mantenimiento. Muchas gracias.
+
+
