@@ -3,10 +3,12 @@ Tema: medidas de protección contra incendios en un taller de reparación de veh
 
 entrega/
   Moncada_Roa_Milagros_TFA_TST.pdf                 ÚNICO archivo que hay que subir a Ágora (27 páginas): trabajo, bibliografía
-                                                   y anexo con las 9 diapositivas comentadas y el enlace al vídeo (página 22).
+                                                   y anexo con las 9 diapositivas comentadas y el enlace al vídeo (página 22). Lleva además el
+                                                   vídeo MP4 incrustado como archivo adjunto (clip en Acrobat).
   Moncada_Roa_Milagros_TFA_TST_presentacion.pptx   Presentación original con el guion en las notas (por si se pide aparte).
 
 apoyo/
+  Moncada_Roa_Milagros_TFA_TST_solo_enlace.pdf   Misma entrega sin el vídeo incrustado (más ligera), por si la plataforma rechaza el otro.
   Moncada_Roa_Milagros_TFA_TST.docx                Mismo trabajo en Word, por si hay que retocar algo (por ejemplo añadir la fecha en la portada).
   Moncada_Roa_Milagros_TFA_TST_guion_video.pdf     Guion para teleprónter del vídeo (unos 7 minutos).
   Moncada_Roa_Milagros_TFA_TST_guion_video.docx / .txt
