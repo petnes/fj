@@ -1,0 +1,15 @@
+CASO PRÁCTICO DE RIESGOS FÍSICOS (simulacro de emergencia y evacuación)
+
+entrega/
+  Moncada_Roa_Milagros_Caso_Practico_Riesgos_Fisicos.pdf   Archivo que se sube a la plataforma (solo PDF): 2 páginas de texto en Courier 10
+                                                           a espacio simple más 1 página de referencias, como pide el enunciado.
+apoyo/
+  Moncada_Roa_Milagros_Caso_Practico_Riesgos_Fisicos.docx  Versión editable corregida.
+  version_original_de_Milagros.docx                        Su versión antes de corregir las citas.
+materiales/
+  Enunciado de la práctica.
+
+Cambios respecto a la versión original: citas en el texto en formato APA 7 (autor y año) en lugar de "[Ver Referencia N]";
+NTP 361 con su título y año reales; URL de la Ley 31/1995 y páginas del BOE del RD 393/2007 corregidas; título real de la
+página de la UNED; nueva referencia a la Orden de 13 de noviembre de 1984 para la meta de diez minutos; equipos de emergencia
+atribuidos a la NTP 361; fecha de consulta en todas las fuentes web; "ETSII-Informática" sustituido por "ETSI Informática".
