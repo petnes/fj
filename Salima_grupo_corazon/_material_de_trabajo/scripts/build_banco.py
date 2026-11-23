@@ -107,7 +107,7 @@ def short_ref(x):
 P('Banco de artículos y fichas de lectura', bold=True, size=16, align='center', after=2)
 P('Apartado 2. Marco teórico y antecedentes', bold=True, size=12, align='center', after=2)
 P('«Un corazón, muchas formas de sentir». Programa intercultural de educación emocional para un aula de 5 años de Melilla y sus familias', size=10.5, align='center', after=2)
-P('Documento de trabajo de Salima para el grupo · Máster en Diversidad Cultural (UGR, Campus de Melilla)', italic=True, size=9.5, align='center', after=12)
+P('Documento de trabajo de Salima López Rami para el grupo · Máster en Diversidad Cultural (UGR, Campus de Melilla)', italic=True, size=9.5, align='center', after=12)
 
 for sec in EXTRA.get('intro', []):
     if sec.get('h'): doc.add_heading(sec['h'], level=1)

@@ -129,7 +129,7 @@ r.font.size = Pt(9)
 P('*Un corazón, muchas formas de sentir*', bold=True, size=14, align='center', after=2)
 P('Programa de educación emocional intercultural para un aula de 5 años y sus familias. Melilla, curso 2026-2027', align='center', size=11, after=2)
 P('Conceptos básicos sobre la diversidad cultural · Máster en Diversidad Cultural (Universidad de Granada, Campus de Melilla)', align='center', size=10, after=2)
-P('Apartados 4 (Beneficiarios), 5 (Objetivos) y 8 (Variables contextuales) · Redacta: Salima [apellidos]', align='center', size=10, italic=True, after=14)
+P('Apartados 4 (Beneficiarios), 5 (Objetivos) y 8 (Variables contextuales) · Redacta: Salima López Rami', align='center', size=10, italic=True, after=14)
 
 for kind, content in T.BLOQUES:
     if kind == 'h1': doc.add_heading(content, level=1)

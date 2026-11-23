@@ -146,7 +146,7 @@ r.font.size = Pt(9)
 P('*Un corazón, muchas formas de sentir*', bold=True, size=14, align='center', after=2)
 P('Programa de educación emocional intercultural para un aula de 5 años y sus familias. Melilla, curso 2026-2027', align='center', size=11, after=2)
 P('Conceptos básicos sobre la diversidad cultural · Máster en Diversidad Cultural (Universidad de Granada, Campus de Melilla)', align='center', size=10, after=2)
-P('Apartado 2: Marco teórico y antecedentes · Redacta: Salima [apellidos]', align='center', size=10, italic=True, after=14)
+P('Apartado 2: Marco teórico y antecedentes · Redacta: Salima López Rami', align='center', size=10, italic=True, after=14)
 
 H('2. Marco teórico y antecedentes', 1)
 for p in T.INTRO: P(p)
