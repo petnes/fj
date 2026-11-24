@@ -1,0 +1,21 @@
+PEC 01. GESTIÓN DE LA PRL Y TÉCNICAS AFINES (MUPRL UNED). Evaluación de riesgos del puesto de trabajo en el domicilio.
+
+entrega/
+  Moncada_Roa_Milagros_PEC01_Evaluacion_Riesgos.pdf   Archivo que se sube a Ágora (12 páginas, A4, Calibri 11, interlineado 1,5,
+                                                      márgenes 2,5/2,5/3/3 como pide el enunciado).
+apoyo/
+  Moncada_Roa_Milagros_PEC01_Evaluacion_Riesgos.docx  Versión editable.
+  version_original_de_Milagros.pdf                    Su versión antes de la corrección (8 páginas en tamaño carta).
+  figura1_fotos_puesto.jpg                            Las fotografías del puesto que ella aportó (retocadas con IA, declarado en el anexo).
+  generador_documento.js                              Script con el que se genera el documento.
+materiales/
+  Enunciado de la PEC 01.
+
+Cambios respecto a la versión original: formato A4 y márgenes del enunciado (el original era tamaño carta); índice con páginas;
+alcance justificado con la Ley 10/2021 (art. 16), la LPRL (art. 16) y el RD 39/1997; metodología explicada con las tablas de la
+NTP 330 y la descripción del método ROSA según la NTP 1173; cinco riesgos de accidente evaluados en lugar de dos, con códigos
+correctos (020 caídas al mismo nivel, 160 contactos eléctricos; el original ponía 010 y 090); método ROSA con las puntuaciones
+parciales de cada elemento y la interpretación correcta (4 es riesgo bajo, no "inapreciable"; el nivel de acción es 5);
+comparación con el anexo del RD 488/1997; planificación de medidas con prioridades y plazos; bibliografía APA 7 con ocho
+referencias comprobadas (NTP 330, NTP 1173, calculador ROSA, Ley 31/1995, Ley 10/2021, RD 39/1997, RD 488/1997 y Sonne et al.,
+2012); declaración de uso de IA completa, incluido el retoque de las fotografías.
