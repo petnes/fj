@@ -1,6 +1,22 @@
 # PEC Reto 2. Contextos y estrategias de intervención social
 
-Borrador, versión 3, ajustada al enunciado. La actividad 2 (reflexión teórica) tiene un máximo de 1.500 palabras (+/- 200) sin contar referencias, y la actividad 3 (propuestas de mejora) 500 palabras (+/- 50). Los fragmentos entre corchetes son huecos que se rellenan con los dos artículos seleccionados; al lado se indica cuántas palabras caben en cada uno para no pasarse del límite. La actividad 1 (registro de búsqueda e infografía) no está aquí porque se da por hecha en la primera fase.
+NOTA PARA QUIEN CONTINÚA (se borra antes de entregar)
+
+Estado. La actividad 2 (reflexión teórica) está redactada en su parte teórica, unas 1.260 palabras de las 1.500 (+/- 200) que permite el enunciado. La actividad 3 está en esquema, con la entrada común ya escrita. La actividad 1 (registro de búsqueda e infografía) no está en este documento.
+
+Qué falta por hacer:
+
+1. Rellenar los huecos entre corchetes con los dos artículos seleccionados. En la pregunta 1 caben unas 130 palabras por artículo más un cierre de 30; en la 2a unas 60; en la 2b unas 50; en la 3 dos frases opcionales. Con eso el total queda en unas 1.690 palabras, justo por debajo del tope. Si hiciera falta más espacio, lo primero que se puede recortar son las frases sobre las casas de acogida.
+
+2. Donde pone [COMPLETAR] falta una idea y una página del módulo de Ávila Cantos et al. (2017): una sobre la relación interventor/intervenido (pregunta 2b) y otra sobre el gerencialismo (pregunta 3).
+
+3. En la cita del reportaje de El País hay que poner apellido del autor o autora y año en el texto, y completar la referencia con fecha y enlace (está en el post de Estela del foro).
+
+4. Actividad 3: redactar las dos propuestas de mejora, una por artículo, de unas 225 palabras cada una, siguiendo el esquema por fases que ya está puesto. Deben ir más allá del género.
+
+5. Añadir los dos artículos a la lista de referencias y comprobar que todo lo citado está en la lista y nada más.
+
+Estilo. Va en primera persona del plural porque es trabajo en pareja. Dentro de las respuestas no hay viñetas, negritas ni subtítulos, y conviene mantenerlo así.
 
 ## Actividad 2. Reflexión a partir de preguntas catalizadoras sobre las intervenciones sociales
 
