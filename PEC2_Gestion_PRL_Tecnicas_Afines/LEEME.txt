@@ -1,0 +1,20 @@
+PEC 02. GESTIÓN DE LA PRL Y TÉCNICAS AFINES (MUPRL UNED). Tema: implementación de la IA en la prevención en construcción.
+
+entrega/
+  Moncada_Roa_Milagros_PEC02_IA_Construccion.pptx   Presentación corregida (13 diapositivas) con el guion de narración en las notas.
+                                                    Antes de grabar hay que rellenar los textos en naranja de la diapositiva 13 (herramienta
+                                                    de IA usada, versión y prompts reales). Grabar con Presentación > Grabar, cámara activada,
+                                                    y entregar el .pptx con la narración (o exportar a MP4). Máximo 10 minutos.
+apoyo/
+  Moncada_Roa_Milagros_PEC02_guion_video.pdf        Guion para teleprónter (unos 9 minutos). También en .docx y .txt.
+  Moncada_Roa_Milagros_PEC02_IA_Construccion_vista_previa.pdf   Las diapositivas en PDF para revisarlas en el móvil.
+  version_original_de_Milagros.pptx                 Su versión antes de la corrección.
+  generador_presentacion.py                         Script con el que se genera la presentación.
+materiales/
+  Enunciado de la PEC 02.
+
+Cambios respecto a la versión original: datos oficiales de siniestralidad (INSST, octubre 2025 a septiembre 2026); citas APA en
+cada diapositiva; marco jurídico completo (LPRL, RD 1627/1997, ET art. 64.4.d, LOPDGDD arts. 89 y 90, RGPD, Reglamento de IA con
+artículos concretos y calendario tras el Reglamento (UE) 2026/1744); metodología y resultados con evidencia científica (cuatro
+artículos con DOI) y matriz de encaje normativo; bibliografía completa (14 referencias); anexo de uso de IA con los cuatro puntos
+que exige el enunciado; corrección de erratas ("Prevention", "Parlamento Europa", "PIMES", "ETSII-Informática"); guion en las notas.

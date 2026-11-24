@@ -1,0 +1,53 @@
+GUION PARA EL VÍDEO DE LA PEC 02
+
+DIAPOSITIVA 1. PORTADA (unos 36 segundos)
+
+Hola. Soy Milagros Moncada Roa y esta es mi PEC 2 de Gestión de la Prevención de Riesgos Laborales y Técnicas Afines. He elegido el tema de la implementación de la inteligencia artificial en las labores de prevención en el sector de la construcción, y lo he enfocado como una pregunta de cumplimiento: qué puede aportar la IA a la vigilancia preventiva en obra y bajo qué condiciones legales puede usarse, ahora que el Reglamento europeo de Inteligencia Artificial ya está en aplicación.
+
+DIAPOSITIVA 2. ÍNDICE (unos 29 segundos)
+
+La presentación sigue la estructura recomendada para la PEC: introducción y justificación, dos bloques de antecedentes, uno sobre el marco de prevención en obras y otro sobre el Reglamento de Inteligencia Artificial y la protección de datos, la metodología, dos bloques de resultados, la discusión, las conclusiones, la bibliografía en APA séptima edición y el anexo con la declaración de uso de inteligencia artificial que exige el enunciado.
+
+DIAPOSITIVA 3. INTRODUCCIÓN Y JUSTIFICACIÓN (unos 55 segundos)
+
+Empiezo por la justificación con datos oficiales del INSST. Entre octubre de 2025 y septiembre de 2026 la construcción tuvo un índice de incidencia de cinco mil quinientos treinta accidentes con baja por cada cien mil personas afiliadas, más del doble de la media, y un índice mortal de once coma ocho frente a dos coma ocho: ciento setenta y tres muertes en jornada en un año. Caídas, atropellos y trabajo sin protección explican esa gravedad, y como la obra cambia cada día, la inspección periódica llega tarde. Mi pregunta es si la inteligencia artificial puede vigilar de forma continua sin vulnerar los derechos de la plantilla ni el Reglamento europeo, con tres objetivos: identificar aplicaciones con evidencia, situarlas en el marco legal y proponer condiciones de implantación.
+
+DIAPOSITIVA 4. ANTECEDENTES I: MARCO DE PRL EN OBRAS (unos 48 segundos)
+
+El marco español ya contiene lo esencial. La Ley de Prevención exige evaluar y planificar, y en su artículo quince manda tener en cuenta la evolución de la técnica. En obras, la Ley y el Real Decreto mil seiscientos veintisiete regulan la presencia de los recursos preventivos, el plan de seguridad y salud, el coordinador y el libro de incidencias. El Estatuto de los Trabajadores permite el control empresarial respetando la dignidad y obliga a informar a la representación legal de los algoritmos que afectan a las condiciones de trabajo. Y la Ley Orgánica de Protección de Datos regula la videovigilancia y la geolocalización en el trabajo con información previa a la plantilla.
+
+DIAPOSITIVA 5. ANTECEDENTES II: REGLAMENTO DE IA Y PROTECCIÓN DE DATOS (unos 69 segundos)
+
+El Reglamento europeo de Inteligencia Artificial funciona por niveles de riesgo. Hay una prohibición que afecta a nuestro caso: inferir las emociones de una persona en el lugar de trabajo, salvo por motivos médicos o de seguridad. Y una categoría de alto riesgo que afecta a la vigilancia en obra: los sistemas destinados a supervisar y evaluar el rendimiento y el comportamiento de las personas en la relación laboral. Para esos sistemas el empleador es el responsable del despliegue: debe usarlos según las instrucciones, encomendar la supervisión humana a personas competentes e informar a los trabajadores y a sus representantes antes de ponerlos en servicio. Las prohibiciones se aplican desde febrero de dos mil veinticinco, pero las obligaciones de alto riesgo del anexo tres se han aplazado al dos de diciembre de dos mil veintisiete por el Ómnibus digital de julio de este año. Y el Reglamento de Protección de Datos exige una evaluación de impacto cuando hay observación sistemática de personas.
+
+DIAPOSITIVA 6. METODOLOGÍA (unos 42 segundos)
+
+La metodología es una revisión documental cualitativa con tres tipos de fuentes: la normativa en texto consolidado del BOE y de EUR-Lex, la estadística oficial del INSST y la literatura técnica, es decir, dos informes de la Agencia Europea para la Seguridad y la Salud en el Trabajo y cuatro artículos revisados por pares. Seleccioné aplicaciones probadas en obra, con evidencia publicada y relacionadas con caídas, atropellos o uso de EPI, y las analicé en una matriz que cruza tecnología, riesgo, evidencia y requisitos legales. Las limitaciones: literatura anglosajona y anterior al Reglamento, y sin datos de pymes españolas.
+
+DIAPOSITIVA 7. RESULTADOS I: APLICACIONES CON EVIDENCIA (unos 59 segundos)
+
+Primer resultado: tres aplicaciones con evidencia. La visión artificial sobre las cámaras de la obra para detectar casco, chaleco y arnés: Nath y colaboradores demostraron en dos mil veinte la detección en tiempo real con redes neuronales, y Fang y colaboradores, en dos mil dieciocho, la detección de la ausencia de casco en vídeo de vigilancia a larga distancia; sus límites son las oclusiones, la luz, el polvo, los falsos positivos y, sobre todo, que tratan imágenes de personas identificables. Los sensores de proximidad entre maquinaria y personas, validados en campo por Teizer y colaboradores en dos mil diez. Y la comprobación automática de reglas de seguridad sobre el modelo BIM, que Zhang y colaboradores aplicaron en dos mil quince a los riesgos de caída desde la planificación. Ninguna sustituye al recurso preventivo: le dan información antes.
+
+DIAPOSITIVA 8. RESULTADOS II: ENCAJE NORMATIVO (unos 56 segundos)
+
+Segundo resultado, la matriz de encaje normativo, que es la aportación central. La visión artificial sobre personas trata imágenes identificables y, si sirve para supervisar o evaluar el comportamiento, es de alto riesgo; nunca puede inferir emociones. Eso obliga a supervisión humana competente, información previa a la plantilla y a sus representantes, evaluación de impacto de protección de datos y a cumplir la Ley Orgánica y el Estatuto. Y la finalidad debe ser preventiva, no disciplinaria. Los sensores de proximidad tratan datos mínimos y no evalúan a la persona: quedan fuera del anexo tres, aunque pueden ser un componente de seguridad de la máquina. Las reglas sobre el modelo BIM no tratan personas: riesgo mínimo. La misma cámara es riesgo mínimo si cuenta cascos y alto riesgo si evalúa a personas.
+
+DIAPOSITIVA 9. DISCUSIÓN (unos 51 segundos)
+
+En la discusión destaco la supervisión humana como condición. El sistema propone y la persona decide: el recurso preventivo y el coordinador conservan la decisión, y el algoritmo no sanciona. La Agencia Europea ha documentado los riesgos de la gestión algorítmica, intensificación del trabajo, pérdida de autonomía, sensación de vigilancia y sesgos, y propone medidas que encajan con nuestro sistema: participación desde el diseño, transparencia sobre qué se mide y para qué, minimización de datos y revisión de los falsos positivos. El canal ya existe: el Comité de Seguridad y Salud y la información a la representación legal. Queda la viabilidad en pymes, las condiciones de obra y la formación del personal. La tecnología es la parte fácil.
+
+DIAPOSITIVA 10. CONCLUSIONES (unos 48 segundos)
+
+Cuatro conclusiones. Primera: la inteligencia artificial aporta vigilancia continua en tres frentes con evidencia, EPI, proximidad a maquinaria y caídas anticipadas en BIM, en un sector que duplica con creces la siniestralidad media. Segunda: el marco español ya exige lo esencial y el Reglamento de IA añade la clasificación por riesgo, la supervisión humana y la información a la plantilla. Tercera: lo prohibido es claro y lo de alto riesgo también, con obligaciones plenas desde el dos de diciembre de dos mil veintisiete. Y la recomendación: implantar con finalidad exclusivamente preventiva, con el recurso preventivo al mando, con evaluación de impacto y consulta previa, y medir el resultado en siniestralidad, no en sanciones.
+
+DIAPOSITIVA 11. BIBLIOGRAFÍA (1 DE 2) (unos 17 segundos)
+
+Bibliografía en APA séptima edición, con la normativa española y europea en texto consolidado y, en la segunda diapositiva, la estadística del INSST, los dos informes de la Agencia Europea y los cuatro artículos científicos citados en los resultados.
+
+DIAPOSITIVA 12. BIBLIOGRAFÍA (2 DE 2) (unos 7 segundos)
+
+Todas las fuentes de internet llevan la fecha de consulta, y los artículos su identificador DOI.
+
+DIAPOSITIVA 13. ANEXO: DECLARACIÓN DE USO DE IA (unos 35 segundos)
+
+Termino con la declaración de uso de inteligencia artificial que pide el enunciado: sí la he utilizado como apoyo, cito la herramienta en formato APA, indico los prompts, las instrucciones y los resultados, y reflexiono sobre su utilidad. Me sirvió para ordenar el índice y arrancar la redacción; las afirmaciones sin fuente se descartaron y los errores se corrigieron. La estadística, la lectura de la normativa y de los artículos, la matriz de encaje y las conclusiones son aportación propia. Muchas gracias.
