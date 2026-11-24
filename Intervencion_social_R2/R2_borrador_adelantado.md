@@ -2,6 +2,8 @@
 
 NOTA PARA QUIEN CONTINÚA (se borra antes de entregar)
 
+Todo lo que está en rojo es lo que hay que borrar o sustituir por texto propio. Lo que está en negro es el texto definitivo y no hace falta tocarlo.
+
 Estado. La actividad 2 (reflexión teórica) está redactada en su parte teórica, unas 1.260 palabras de las 1.500 (+/- 200) que permite el enunciado. La actividad 3 está en esquema, con la entrada común ya escrita. La actividad 1 (registro de búsqueda e infografía) no está en este documento.
 
 Qué falta por hacer:
