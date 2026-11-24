@@ -36,9 +36,9 @@ Arnstein, S. R. (1969). A ladder of citizen participation. Journal of the Americ
 
 Ávila Cantos, D., Cassián Yde, N., García García, S. y Pérez Pérez, M. (2017). El campo de la evaluación y la intervención social. FUOC.
 
-Crenshaw, K. (2016, octubre). The urgency of intersectionality [Vídeo]. TEDWomen. [enlace del aula]
+Crenshaw, K. (2016, octubre). The urgency of intersectionality [Vídeo]. TEDWomen.
 
-Cruells, M. (2017, marzo). El concepto de interseccionalidad y su potencia académica y política [Vídeo]. Ciclo Intersecciones, Centro de Formación de la Cooperación Española en Montevideo. [enlace del aula]
+Cruells, M. (2017, marzo). El concepto de interseccionalidad y su potencia académica y política [Vídeo]. Ciclo Intersecciones, Centro de Formación de la Cooperación Española en Montevideo.
 
 Foucault, M. (2002). Vigilar y castigar: nacimiento de la prisión. Siglo XXI. (Obra original publicada en 1975)
 
