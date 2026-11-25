@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Infografía comparativa R2</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 794px; height: 1123px; background: #E4EAF0; }
+  body { font-family: 'Inter', 'DejaVu Sans', sans-serif; color: #242A24;
+         -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page { width: 794px; height: 1123px; overflow: hidden; display: flex; flex-direction: column; background: #E4EAF0; }
+
+  .banner { position: relative; height: 122px; background: #306084; overflow: hidden; flex: none; }
+  .banner h1 { position: absolute; left: 28px; top: 20px; width: 540px; font-family: 'Inter Display', 'Inter', sans-serif;
+               font-weight: 800; font-size: 28.5px; line-height: 1.13; color: #fff; text-transform: uppercase; letter-spacing: .2px; }
+  .banner .ciudad { position: absolute; right: 0; top: 0; width: 236px; height: 122px;
+                    background: url(assets/ciudad.png) right bottom / cover no-repeat; }
+  .banner .ciudad::before { content: ""; position: absolute; inset: 0;
+                    background: linear-gradient(90deg, #306084 0%, rgba(48,96,132,0) 38%); }
+
+  .intro { display: flex; align-items: center; height: 80px; background: #D8E4EA; flex: none; }
+  .intro .personas { width: 246px; height: 80px; flex: none; background: url(assets/personas.png) left bottom / cover no-repeat; }
+  .intro p { padding: 0 28px 0 20px; font-size: 13.6px; font-weight: 600; color: #184E78; line-height: 1.38; }
+
+  .grid { display: grid; grid-template-columns: 172px 1fr 1fr; gap: 6px; padding: 10px 14px 0; flex: none; }
+  .lab { background: #C0D2DE; color: #184E78; border-radius: 7px; display: flex; align-items: center; justify-content: center;
+         text-align: center; font-weight: 800; font-size: 15px; line-height: 1.2; text-transform: uppercase; letter-spacing: .4px; }
+  .art { border-radius: 7px; overflow: hidden; display: flex; flex-direction: column; }
+  .art .t { color: #fff; font-weight: 700; font-size: 12.2px; line-height: 1.3; padding: 9px 12px; text-align: center; flex: 1;
+            display: flex; align-items: center; justify-content: center; }
+  .art .s { font-size: 10.8px; line-height: 1.35; padding: 6px 10px 7px; text-align: center; }
+  .a1 .t { background: #72A27E; } .a1 .s { background: #B4CCBA; color: #1F3324; }
+  .a2 .t { background: #9C7E60; } .a2 .s { background: #F0C696; color: #3A2714; }
+
+  .q { background: #D8E4EA; color: #184E78; border-radius: 7px; font-weight: 700; font-size: 13.2px; line-height: 1.28;
+       padding: 10px 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 7px; }
+  .ic { width: 42px; height: 42px; border-radius: 50%; background: #365A7E; display: flex; align-items: center; justify-content: center; flex: none; }
+  .ic svg { width: 24px; height: 24px; }
+  .c { border-radius: 7px; font-size: 12.3px; line-height: 1.42; padding: 10px 13px; }
+  .c1 { background: #DEEADE; } .c2 { background: #F6E4D2; }
+  .c b { font-weight: 700; color: #111; }
+
+  .concl { margin: 10px 14px 0; background: #D2D2E4; border-radius: 14px; padding: 13px 20px 13px 16px;
+           display: flex; gap: 16px; align-items: center; flex: none; }
+  .concl svg { width: 64px; height: 64px; flex: none; }
+  .concl h2 { color: #063C60; font-size: 16px; font-weight: 800; letter-spacing: .6px; text-transform: uppercase; margin-bottom: 4px; }
+  .concl p { font-size: 13.2px; line-height: 1.42; color: #063C60; }
+
+  .foot { margin-top: auto; padding: 0 18px 14px; display: flex; gap: 14px; align-items: center; flex: none; }
+  .foot .lbl { font-weight: 800; color: #184E78; font-size: 15px; text-transform: uppercase; letter-spacing: .5px;
+               border-right: 2px solid #9FB3C4; padding-right: 14px; align-self: stretch; display: flex; align-items: center; }
+  .foot p { font-size: 9.5px; line-height: 1.35; color: #2B3A48; padding-left: 14px; text-indent: -14px; margin-bottom: 3px; }
+  .foot p:last-child { margin-bottom: 0; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="banner">
+    <h1>La intervención social ante situaciones de vulnerabilidad</h1>
+    <div class="ciudad"></div>
+  </div>
+
+  <div class="intro">
+    <div class="personas"></div>
+    <p>Un análisis comparativo de dos modelos de intervención: del trabajo tradicional con personas y familias a la investigación-acción participativa en el barrio.</p>
+  </div>
+
+  <div class="grid">
+    <div class="lab">Artículos<br>analizados</div>
+    <div class="art a1">
+      <div class="t">Metodología de intervención social con personas y familias multiproblemáticas</div>
+      <div class="s"><b>Hernández-Echegaray y Pastor Seller (2020)</b><br><i>España. Enfoque tradicional: trabajo social de casos en los Servicios Sociales Comunitarios</i></div>
+    </div>
+    <div class="art a2">
+      <div class="t">Working from the Ground Up and Participatory Action Research: An old urban neighbourhood in Hong Kong</div>
+      <div class="s"><b>Fung, Chan y Hung (2023)</b><br><i>Hong Kong. Enfoque participativo y comunitario: investigación-acción con el vecindario</i></div>
+    </div>
+
+    <div class="q">
+      <span class="ic"><svg viewBox="0 0 24 24"><circle cx="10.2" cy="10.2" r="6.3" fill="none" stroke="#fff" stroke-width="2.4"/><line x1="15" y1="15" x2="20.5" y2="20.5" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/></svg></span>
+      ¿Cómo se construye y define el problema social?
+    </div>
+    <div class="c c1">Como una suma de problemas dentro de la familia: crisis recurrentes, violencia, aislamiento, pobreza y carencias emocionales. Se analiza “como si se tratase de una patología social polisintomática” (p.&nbsp;137). Lo detecta <b>el profesional</b>, con un <i>screening</i> de criterios de riesgo.</div>
+    <div class="c c2">Desde lo que percibe <b>el propio vecindario</b>: los problemas de un barrio antiguo y empobrecido donde muchas personas viven de alquiler en pisos subdivididos, una forma de infravivienda. Son ellas quienes analizan sus causas.</div>
+
+    <div class="q">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="#fff"><circle cx="12" cy="7.2" r="3.3"/><path d="M5.8 19.6c0-3.7 2.8-6.3 6.2-6.3s6.2 2.6 6.2 6.3z"/><circle cx="4.9" cy="9.4" r="2.3"/><path d="M0.9 18.6c0-2.8 1.7-4.7 4-4.7 1 0 1.9.3 2.6.9-1.2 1.1-1.9 2.4-2.1 3.8z"/><circle cx="19.1" cy="9.4" r="2.3"/><path d="M23.1 18.6c0-2.8-1.7-4.7-4-4.7-1 0-1.9.3-2.6.9 1.2 1.1 1.9 2.4 2.1 3.8z"/></svg></span>
+      ¿Cuál es la población diana y cómo se construye el sujeto de intervención?
+    </div>
+    <div class="c c1">Personas y familias multiproblemáticas, el 25,6&nbsp;% de las atenciones de los Servicios Sociales según el III Informe sobre los Servicios Sociales en España. El sujeto se construye <b>desde el déficit y el riesgo</b>, aunque el texto propone un co-diagnóstico y partir de sus potencialidades.</div>
+    <div class="c c2">Personas inquilinas de pisos subdivididos con bajos ingresos. El sujeto es <b>activo</b>: conoce su barrio, fija las prioridades de cambio y actúa de forma colectiva.</div>
+
+    <div class="q">
+      <span class="ic"><svg viewBox="0 0 24 24"><g fill="#fff"><circle cx="12" cy="12" r="6.4"/>
+        <rect x="10.3" y="2.2" width="3.4" height="4.2" rx=".7"/><rect x="10.3" y="2.2" width="3.4" height="4.2" rx=".7" transform="rotate(45 12 12)"/>
+        <rect x="10.3" y="2.2" width="3.4" height="4.2" rx=".7" transform="rotate(90 12 12)"/><rect x="10.3" y="2.2" width="3.4" height="4.2" rx=".7" transform="rotate(135 12 12)"/>
+        <rect x="10.3" y="2.2" width="3.4" height="4.2" rx=".7" transform="rotate(180 12 12)"/><rect x="10.3" y="2.2" width="3.4" height="4.2" rx=".7" transform="rotate(225 12 12)"/>
+        <rect x="10.3" y="2.2" width="3.4" height="4.2" rx=".7" transform="rotate(270 12 12)"/><rect x="10.3" y="2.2" width="3.4" height="4.2" rx=".7" transform="rotate(315 12 12)"/></g>
+        <circle cx="12" cy="12" r="2.7" fill="#365A7E"/></svg></span>
+      ¿Qué tipo de intervención se propone?
+    </div>
+    <div class="c c1"><b>Trabajo Social de Casos</b>, individual y familiar, en cuatro fases: estudio, diagnóstico, tratamiento y evaluación. Usa <i>screening</i>, entrevistas, visitas a domicilio, genograma y las escalas HDME y GENCAT antes y después. Dura como máximo dos años.</div>
+    <div class="c c2"><b>Investigación-acción participativa</b> con el modelo <i>Working from the Ground Up</i>, en cuatro fases: observación, reflexión, planificación y acción. Durante cuatro años, el vecindario evalúa su barrio con <i>Photovoice</i> y se compromete a cambiarlo de forma colectiva.</div>
+
+    <div class="q">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="#fff"><circle cx="12" cy="7.4" r="4.1"/><path d="M4 21c0-4.6 3.6-7.8 8-7.8s8 3.2 8 7.8z"/></svg></span>
+      ¿Quién ha diseñado y/o implementado la intervención?
+    </div>
+    <div class="c c1">La diseñan, como propuesta metodológica, una trabajadora social municipal y un profesor de universidad. La aplicaría <b>el o la trabajadora social de referencia</b> de los Servicios Sociales Comunitarios.</div>
+    <div class="c c2">Un equipo de investigación de la Universidad Baptista de Hong Kong junto a profesionales comunitarios. <b>Las personas inquilinas participan</b> en la evaluación del barrio y en las acciones de cambio.</div>
+  </div>
+
+  <div class="concl">
+    <svg viewBox="0 0 64 64"><circle cx="28" cy="36" r="24" fill="none" stroke="#78669C" stroke-width="5"/><circle cx="28" cy="36" r="14.5" fill="none" stroke="#78669C" stroke-width="5"/><circle cx="28" cy="36" r="5.5" fill="#78669C"/>
+      <line x1="29" y1="35" x2="55" y2="9" stroke="#5B4A86" stroke-width="4" stroke-linecap="round"/><path d="M49 4 L60 4 L60 15 L55 9 Z" fill="#5B4A86"/></svg>
+    <div>
+      <h2>Conclusión</h2>
+      <p>Las dos publicaciones dicen situar a la persona en el centro, pero no le dan el mismo lugar. En la primera, el problema lo definen el profesional y sus escalas; en la segunda, lo define el propio vecindario. Más que el nivel de intervención (familia o barrio), lo que las separa es <b>quién tiene la palabra y quién decide</b>.</p>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="lbl">Fuentes</div>
+    <div>
+      <p>Hernández-Echegaray, A. y Pastor Seller, E. (2020). Metodología de intervención social con personas y familias multiproblemáticas. <i>Interacción y Perspectiva: Revista de Trabajo Social</i>, <i>10</i>(2), 133-155. https://dialnet.unirioja.es/servlet/articulo?codigo=8100013</p>
+      <p>Fung, K. K., Chan, Y. C. y Hung, S. L. (2023). Working from the ground up and participatory action research: An old urban neighbourhood in Hong Kong. <i>Journal of Community Practice</i>, <i>31</i>(1), 63-81. https://doi.org/10.1080/10705422.2023.2181900</p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
