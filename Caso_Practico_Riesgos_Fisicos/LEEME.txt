@@ -3,6 +3,7 @@ CASO PRÁCTICO DE RIESGOS FÍSICOS (simulacro de emergencia y evacuación)
 entrega/
   Moncada_Roa_Milagros_Caso_Practico_Riesgos_Fisicos.pdf   Archivo que se sube a la plataforma (solo PDF): 2 páginas de texto en Courier 10
                                                            a espacio simple más 1 página de referencias, como pide el enunciado.
+                                                           Exportado con la fuente Courier New incrustada, igual que desde Word.
 apoyo/
   Moncada_Roa_Milagros_Caso_Practico_Riesgos_Fisicos.docx  Versión editable corregida.
   version_original_de_Milagros.docx                        Su versión antes de corregir las citas.

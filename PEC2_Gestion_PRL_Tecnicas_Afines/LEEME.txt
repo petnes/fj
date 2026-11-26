@@ -2,11 +2,13 @@ PEC 02. GESTIÓN DE LA PRL Y TÉCNICAS AFINES (MUPRL UNED). Tema: implementació
 
 entrega/
   Moncada_Roa_Milagros_PEC02_IA_Construccion.pptx   Presentación corregida (13 diapositivas) con el guion de narración en las notas.
-                                                    La diapositiva 13 (declaración de uso de IA) está completa. Grabar con Presentación > Grabar,
+                                                    La diapositiva 13 declara el uso real de IA: ChatGPT y Gemini en su primera
+                                                    versión y Claude en la revisión. Grabar con Presentación > Grabar,
                                                     cámara activada, y entregar el .pptx con la narración (o exportar a MP4). Máximo 10 minutos.
 apoyo/
   Moncada_Roa_Milagros_PEC02_guion_video.pdf        Guion para teleprónter (unos 9 minutos). También en .docx y .txt.
-  Moncada_Roa_Milagros_PEC02_IA_Construccion_vista_previa.pdf   Las diapositivas en PDF para revisarlas en el móvil.
+  Moncada_Roa_Milagros_PEC02_copia_de_lectura_NO_ENTREGAR.pdf   Las diapositivas en PDF solo para leerlas en el móvil. La PEC 02 no
+                                                    se entrega en PDF: el enunciado exige .pptx narrado o vídeo (.mp4 o .avi).
   version_original_de_Milagros.pptx                 Su versión antes de la corrección.
   generador_presentacion.py                         Script con el que se genera la presentación.
 materiales/

@@ -12,10 +12,13 @@ materiales/
   Enunciado de la PEC 01.
 
 Cambios respecto a la versión original: formato A4 y márgenes del enunciado (el original era tamaño carta); índice con páginas;
-alcance justificado con la Ley 10/2021 (art. 16), la LPRL (art. 16) y el RD 39/1997; metodología explicada con las tablas de la
-NTP 330 y la descripción del método ROSA según la NTP 1173; cinco riesgos de accidente evaluados en lugar de dos, con códigos
-correctos (020 caídas al mismo nivel, 160 contactos eléctricos; el original ponía 010 y 090); método ROSA con las puntuaciones
-parciales de cada elemento y la interpretación correcta (4 es riesgo bajo, no "inapreciable"; el nivel de acción es 5);
-comparación con el anexo del RD 488/1997; planificación de medidas con prioridades y plazos; bibliografía APA 7 con ocho
-referencias comprobadas (NTP 330, NTP 1173, calculador ROSA, Ley 31/1995, Ley 10/2021, RD 39/1997, RD 488/1997 y Sonne et al.,
-2012); declaración de uso de IA completa, incluido el retoque de las fotografías.
+alcance justificado con la Ley 10/2021 (art. 16), la LPRL (art. 16) y el RD 39/1997; metodología con las tablas de la NTP 330 y el
+método ROSA según la NTP 1173; cinco riesgos de accidente con códigos correctos, descritos a partir de su texto y de sus fotografías
+(cableado suelto y alfombra, regletas, mueble de estanterías sin fijación comprobada, cajonera en el giro de la silla); método ROSA
+calculado paso a paso con las tablas oficiales A a F (resultado 4, riesgo bajo, nivel de acción en 5); pantalla frente a la ventana
+señalada frente al RD 488/1997; planificación de medidas con prioridades y plazos; bibliografía APA 7 con ocho referencias
+comprobadas; declaración de uso de IA fiel a lo ocurrido (ChatGPT en la primera versión, herramienta de imagen para las fotos y
+Claude en la revisión).
+
+Antes de subirla, Milagros debe leerla y confirmar que lo descrito coincide con su despacho (la declaración afirma que lo ha
+comprobado) y, si quiere completar la cita APA, indicar qué aplicación usó para modificar las fotografías.

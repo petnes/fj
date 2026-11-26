@@ -20,9 +20,9 @@ DIAPOSITIVA 5. ANTECEDENTES II: REGLAMENTO DE IA Y PROTECCIÓN DE DATOS (unos 69
 
 El Reglamento europeo de Inteligencia Artificial funciona por niveles de riesgo. Hay una prohibición que afecta a nuestro caso: inferir las emociones de una persona en el lugar de trabajo, salvo por motivos médicos o de seguridad. Y una categoría de alto riesgo que afecta a la vigilancia en obra: los sistemas destinados a supervisar y evaluar el rendimiento y el comportamiento de las personas en la relación laboral. Para esos sistemas el empleador es el responsable del despliegue: debe usarlos según las instrucciones, encomendar la supervisión humana a personas competentes e informar a los trabajadores y a sus representantes antes de ponerlos en servicio. Las prohibiciones se aplican desde febrero de dos mil veinticinco, pero las obligaciones de alto riesgo del anexo tres se han aplazado al dos de diciembre de dos mil veintisiete por el Ómnibus digital de julio de este año. Y el Reglamento de Protección de Datos exige una evaluación de impacto cuando hay observación sistemática de personas.
 
-DIAPOSITIVA 6. METODOLOGÍA (unos 42 segundos)
+DIAPOSITIVA 6. METODOLOGÍA (unos 43 segundos)
 
-La metodología es una revisión documental cualitativa con tres tipos de fuentes: la normativa en texto consolidado del BOE y de EUR-Lex, la estadística oficial del INSST y la literatura técnica, es decir, dos informes de la Agencia Europea para la Seguridad y la Salud en el Trabajo y cuatro artículos revisados por pares. Seleccioné aplicaciones probadas en obra, con evidencia publicada y relacionadas con caídas, atropellos o uso de EPI, y las analicé en una matriz que cruza tecnología, riesgo, evidencia y requisitos legales. Las limitaciones: literatura anglosajona y anterior al Reglamento, y sin datos de pymes españolas.
+La metodología es una revisión documental cualitativa con tres tipos de fuentes: la normativa en texto consolidado del BOE y de EUR-Lex, la estadística oficial del INSST y la literatura técnica, es decir, dos informes de la Agencia Europea para la Seguridad y la Salud en el Trabajo y cuatro artículos revisados por pares. Se seleccionaron aplicaciones probadas en obra, con evidencia publicada y relacionadas con caídas, atropellos o uso de EPI, y se analizaron en una matriz que cruza tecnología, riesgo, evidencia y requisitos legales. Las limitaciones: literatura anglosajona y anterior al Reglamento, y sin datos de pymes españolas.
 
 DIAPOSITIVA 7. RESULTADOS I: APLICACIONES CON EVIDENCIA (unos 59 segundos)
 
@@ -48,6 +48,6 @@ DIAPOSITIVA 12. BIBLIOGRAFÍA (2 DE 2) (unos 7 segundos)
 
 Todas las fuentes de internet llevan la fecha de consulta, y los artículos su identificador DOI.
 
-DIAPOSITIVA 13. ANEXO: DECLARACIÓN DE USO DE IA (unos 35 segundos)
+DIAPOSITIVA 13. ANEXO: DECLARACIÓN DE USO DE IA (unos 39 segundos)
 
-Termino con la declaración de uso de inteligencia artificial que pide el enunciado: sí la he utilizado como apoyo, cito la herramienta en formato APA, indico los prompts, las instrucciones y los resultados, y reflexiono sobre su utilidad. Me sirvió para ordenar el índice y arrancar la redacción; las afirmaciones sin fuente se descartaron y los errores se corrigieron. La estadística, la lectura de la normativa y de los artículos, la matriz de encaje y las conclusiones son aportación propia. Muchas gracias.
+Termino con la declaración de uso de inteligencia artificial que pide el enunciado. Sí la he utilizado: ChatGPT y Gemini en la primera versión, para la estructura, la adaptación al Reglamento y el guion, y Claude en la revisión, que añadió los datos del INSST, las citas, la normativa concreta, los artículos científicos y el guion definitivo. El tema y el enfoque son míos, y la conclusión que saco es que la inteligencia artificial ayuda, pero hay que contrastarla con las fuentes oficiales, porque la primera versión tenía errores. Muchas gracias.
