@@ -1,12 +1,14 @@
 PEC 01. GESTIÓN DE LA PRL Y TÉCNICAS AFINES (MUPRL UNED). Evaluación de riesgos del puesto de trabajo en el domicilio.
 
 entrega/
-  Moncada_Roa_Milagros_PEC01_Evaluacion_Riesgos.pdf   Archivo que se sube a Ágora (12 páginas, A4, Calibri 11, interlineado 1,5,
+  Moncada_Roa_Milagros_PEC01_Evaluacion_Riesgos.pdf   Archivo que se sube a Ágora (15 páginas, A4, Calibri 11, interlineado 1,5,
                                                       márgenes 2,5/2,5/3/3 como pide el enunciado).
 apoyo/
   Moncada_Roa_Milagros_PEC01_Evaluacion_Riesgos.docx  Versión editable.
   version_original_de_Milagros.pdf                    Su versión antes de la corrección (8 páginas en tamaño carta).
-  figura1_fotos_puesto.jpg                            Las fotografías del puesto que ella aportó (retocadas con IA, declarado en el anexo).
+  figura1_fotos_puesto.jpg                            Las fotografías del puesto que ella aportó (retocadas con ChatGPT, declarado en el anexo).
+  Informe_calculador_ROSA_INSST.pdf                   Informe oficial del calculador ROSA del INSST (incluido como Anexo II del trabajo).
+  figura2_resultado_calculador_ROSA.png               Captura del resultado del calculador (Figura 2 del trabajo).
   generador_documento.js                              Script con el que se genera el documento.
 materiales/
   Enunciado de la PEC 01.
@@ -15,7 +17,8 @@ Cambios respecto a la versión original: formato A4 y márgenes del enunciado (e
 alcance justificado con la Ley 10/2021 (art. 16), la LPRL (art. 16) y el RD 39/1997; metodología con las tablas de la NTP 330 y el
 método ROSA según la NTP 1173; cinco riesgos de accidente con códigos correctos, descritos a partir de su texto y de sus fotografías
 (cableado suelto y alfombra, regletas, mueble de estanterías sin fijación comprobada, cajonera en el giro de la silla); método ROSA
-calculado paso a paso con las tablas oficiales A a F (resultado 4, riesgo bajo, nivel de acción en 5); pantalla frente a la ventana
+aplicado con el calculador oficial del INSST (resultado 5, nivel de acción; 4 con auriculares y 3 con reposabrazos
+regulables), con captura del resultado y el informe oficial como Anexo II; pantalla frente a la ventana
 señalada frente al RD 488/1997; planificación de medidas con prioridades y plazos; bibliografía APA 7 con ocho referencias
 comprobadas; declaración de uso de IA fiel a lo ocurrido (ChatGPT en la primera versión y en las fotografías, Claude en la revisión).
 
