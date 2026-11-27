@@ -6,7 +6,7 @@ entrega/
 apoyo/
   Moncada_Roa_Milagros_PEC01_Evaluacion_Riesgos.docx  Versión editable.
   version_original_de_Milagros.pdf                    Su versión antes de la corrección (8 páginas en tamaño carta).
-  figura1_fotos_puesto.jpg                            Las fotografías del puesto que ella aportó (retocadas con ChatGPT, declarado en el anexo).
+  figura1_fotos_puesto.jpg                            Las fotografías del puesto que ella aportó (retocadas con ChatGPT, Copilot y Gemini, declarado en el anexo).
   Informe_calculador_ROSA_INSST.pdf                   Informe oficial del calculador ROSA del INSST (incluido como Anexo II del trabajo).
   figura2_resultado_calculador_ROSA.png               Captura del resultado del calculador (Figura 2 del trabajo).
   generador_documento.js                              Script con el que se genera el documento.
@@ -20,7 +20,8 @@ método ROSA según la NTP 1173; cinco riesgos de accidente con códigos correct
 aplicado con el calculador oficial del INSST (resultado 5, nivel de acción; 4 con auriculares y 3 con reposabrazos
 regulables), con captura del resultado y el informe oficial como Anexo II; pantalla frente a la ventana
 señalada frente al RD 488/1997; planificación de medidas con prioridades y plazos; bibliografía APA 7 con ocho referencias
-comprobadas; declaración de uso de IA fiel a lo ocurrido (ChatGPT en la primera versión y en las fotografías, Claude en la revisión).
+comprobadas; declaración de uso de IA fiel a lo ocurrido (ChatGPT en la primera versión; ChatGPT, Copilot y Gemini en el retoque
+de las fotografías; Claude en la revisión). Las cuatro herramientas figuran con su cita APA en el Anexo I.
 
 Antes de subirla, Milagros debe leerla y confirmar que lo descrito coincide con su despacho (la declaración afirma que lo ha
 comprobado).
